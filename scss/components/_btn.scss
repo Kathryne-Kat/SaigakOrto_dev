@@ -1,0 +1,17 @@
+.btn {
+  font-family: "Mulish";
+  color: var(--primary-color);
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  background: var(--btn-color);
+  padding: 16px 36px;
+
+  &:hover {
+    background: var(--btn-color-2);
+  }
+}
+
+.btn-icon {
+  width: 24px;
+}

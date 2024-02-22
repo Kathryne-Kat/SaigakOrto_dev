@@ -1,0 +1,131 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--primary-text-color);
+  background-color: var(--primary-color);
+  line-height: normal;
+
+  .no-scroll {
+    overflow: hidden;
+  }
+  a {
+    color: var(--primary-text-color);
+
+    // &:hover {
+    //   color: var(--accent-color);
+    //   font-weight: 700;
+    // }
+  }
+}
+@media screen and (max-width: 860px) {
+}
+
+.hidden {
+  display: none;
+}
+
+.is-hidden {
+  display: none;
+}
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin: 0 auto;
+}
+.container-all {
+  width: 100%;
+}
+.container-l {
+  width: 100%;
+  padding-left: 60px;
+}
+.container-single {
+  max-width: 1160px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.row__c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.columns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.section {
+  margin-bottom: 56px;
+}
+.section-s {
+  margin-bottom: 16px;
+}
+.section-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.section-item {
+  width: 31%;
+  padding: 0;
+  border-radius: 14px;
+  // background: var(--accent-color-d);
+  border: 1px solid #ededed;
+  justify-content: space-between;
+}
+.section-title {
+  width: 670px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0 auto 16px;
+
+  line-height: 150%;
+}
+.section-name {
+  color: var(--accent-color);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+.title-item {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 150%;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+// .title-item-h4 {
+//   font-family: Unbounded;
+//   color: var(--primary-text-color);
+//   font-size: 18px;
+//   font-weight: 500;
+//   line-height: 150%;
+//   /* 27px */
+// }
+.text-item-wrap {
+  padding: 16px;
+}
+.text-item {
+  color: #000000;
+  line-height: 150%;
+  font-size: 15px;
+  margin: 0;
+}

@@ -1,0 +1,15 @@
+.services__list-item {
+  max-width: 430px;
+  width: 100%;
+  & img {
+    max-width: 415px;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 14px 14px 0px 0px;
+  }
+}
+.services-list {
+  flex-wrap: wrap;
+  gap: 42px;
+}

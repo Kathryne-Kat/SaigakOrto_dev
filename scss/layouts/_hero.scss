@@ -1,0 +1,33 @@
+.hero {
+  width: 100%;
+  & h1 {
+    max-width: 800px;
+    width: 100%;
+    font-size: 62px;
+    font-weight: 600;
+    line-height: 76px;
+    text-align: center;
+    margin: 16px auto 6px;
+  }
+  & p {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto 16px;
+    font-weight: 300;
+    line-height: 150%;
+    text-align: center;
+  }
+  & div {
+    & button {
+      margin: 0 auto;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+  }
+  & img {
+    width: 100%;
+    border-radius: 22px;
+  }
+}

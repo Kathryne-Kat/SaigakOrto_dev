@@ -1,0 +1,42 @@
+.team__list {
+  gap: 16px;
+  align-items: stretch;
+
+  &__item {
+    width: 24%;
+
+    & .img-wrap {
+      max-width: 320px;
+      width: 100%;
+      height: 210px;
+    }
+    & .team__img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      object-position: top center;
+      border-radius: 16px 16px 0px 0px;
+
+      background: url(image);
+    }
+  }
+  & .text-item-wrap {
+    padding: 24px 16px;
+  }
+}
+.team__city {
+  width: max-content;
+  justify-content: start;
+  background: rgba(0, 165, 165, 0.07);
+  padding: 10px 16px;
+  margin-bottom: 10px;
+  & p {
+    padding-left: 8px;
+    margin: 0;
+    color: rgb(0, 165, 165);
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+}
