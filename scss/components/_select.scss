@@ -1,0 +1,110 @@
+.custom-select-1 {
+  //   position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100%;
+}
+.select {
+  display: block;
+  max-width: 220px;
+  width: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: var(--accent-color-2);
+}
+
+.new-select {
+  position: relative;
+  //   border: 1px solid #ced4da;
+  padding: 10px 15px 10px 10px;
+  cursor: pointer;
+  user-select: none;
+  color: var(--accent-color);
+  font-family: "Mulish";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.new-select__list {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  //   border: 1px solid #ced4da;
+  cursor: pointer;
+  width: 100%;
+  z-index: 10;
+  background: rgb(234, 245, 245);
+  // background: var(--accent-color-2);
+  user-select: none;
+  color: var(--accent-color);
+  font-family: "Mulish";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.new-select__list.on {
+  display: block;
+}
+
+.new-select__item span {
+  display: block;
+  padding: 10px 15px;
+}
+
+.new-select__item span:hover {
+  color: #12b223;
+}
+
+.new-select::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 9px;
+  top: 11px;
+  background: url("/img/icon/MapPin.svg") no-repeat right center / cover;
+  opacity: 0.6;
+
+  -webkit-transition: all 0.27s ease-in-out;
+  -o-transition: all 0.27s ease-in-out;
+  transition: all 0.27s ease-in-out;
+
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.new-select:after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 9px;
+  top: 7px;
+  background: url("/img/icon/CaretDown.svg") no-repeat right center / cover;
+  opacity: 0.6;
+
+  -webkit-transition: all 0.27s ease-in-out;
+  -o-transition: all 0.27s ease-in-out;
+  transition: all 0.27s ease-in-out;
+
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.new-select.on:after {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}

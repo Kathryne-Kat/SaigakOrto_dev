@@ -16,8 +16,11 @@
       object-fit: cover;
       object-position: top center;
       border-radius: 16px 16px 0px 0px;
-
-      background: url(image);
+    }
+    & h3 {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 150%;
     }
   }
   & .text-item-wrap {
