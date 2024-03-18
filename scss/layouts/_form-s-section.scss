@@ -4,7 +4,7 @@
 .form-s__item-wrap {
   position: relative;
   border-radius: 30px;
-  background: rgb(0, 165, 165);
+  background: $accent-color;
   padding: 60px 36px 36px 75px;
   gap: 50px;
   align-items: start;
@@ -12,13 +12,13 @@
 .form-s__item {
   width: 49%;
   & h2 {
-    color: var(--primary-color);
+    color: $primary-color;
     text-align: left;
     margin-bottom: 8px;
     font-weight: 600;
   }
   & p {
-    color: var(--primary-color);
+    color: $primary-color;
     line-height: 150%;
     margin-top: 0;
     margin-bottom: 30px;
@@ -31,11 +31,11 @@
   width: 100%;
   padding: 24px;
   border: 1px solid #eaeaea;
-  background: var(--primary-color);
+  background: $primary-color;
   margin-bottom: 24px;
   border: 1px solid rgb(234, 234, 234);
   border-radius: 11px;
-  background: rgb(255, 255, 255);
+  background: $primary-color;
 }
 .form-s-form form input::placeholder {
   color: var(--grey, #b9b9b9);

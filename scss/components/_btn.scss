@@ -1,14 +1,14 @@
 .btn {
   font-family: "Mulish";
-  color: var(--primary-color);
+  color: $primary-color;
   font-weight: 600;
   border-radius: 6px;
   border: none;
-  background: var(--btn-color);
+  background: $btn-color;
   padding: 16px 36px;
 
   &:hover {
-    background: var(--btn-color-2);
+    background: $btn-color-2;
   }
 }
 

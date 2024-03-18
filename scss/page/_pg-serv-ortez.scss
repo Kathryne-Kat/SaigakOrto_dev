@@ -1,0 +1,135 @@
+.breadcrumbs {
+  & ul {
+    display: flex;
+    & li {
+      font-family: $second-family;
+      // font-family: "Mulish", sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+}
+.pg-ortez-hero-wrap {
+  background: url(/img/pg-serv-ortez-hero.jpg);
+  background-repeat: no-repeat;
+  height: 352px;
+  & h1 {
+    font-weight: 600;
+    font-size: 62px;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+  & p {
+    width: 510px;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.pg-ortez-content {
+  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  & h2 {
+    display: none;
+  }
+  & .row {
+    gap: 5%;
+    align-items: start;
+  }
+
+  &__content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+  }
+  &__item {
+    // padding-bottom: 48px;
+    // border-bottom: 1px solid #d9d9d9;
+    // margin-bottom: 40px;
+    & h3 {
+      font-weight: 600;
+      font-size: 32px;
+      // text-align: center;
+      color: #12253a;
+      margin-top: 48px;
+      margin-bottom: 16px;
+    }
+    & p {
+      line-height: 1.5;
+      color: #555;
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+    & strong {
+      font-style: italic;
+      font-size: 18px;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 24px;
+      margin-top: 24px;
+      color: #555;
+    }
+
+    & img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &.item-one {
+      padding-bottom: 24px;
+      & h4 {
+        font-weight: 500;
+        font-size: 20px;
+        margin-top: 48px;
+      }
+
+      & ul {
+        column-count: 2;
+        column-gap: 48px;
+
+        // margin-right: 48px;
+        // column-width: 650px;
+        & li {
+          display: flex;
+          // width: 600px;
+          margin-bottom: 24px;
+          align-items: center;
+          & p {
+            margin-bottom: 0;
+            margin-left: 12px;
+            width: 100%;
+          }
+          & .icon-checks {
+            width: 22px;
+            height: 22px;
+          }
+        }
+      }
+    }
+    &.item-six {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      & h5 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #555;
+        font-weight: 700;
+      }
+      & p {
+      }
+      & .pg-ortez-strong {
+        font-style: italic;
+        font-weight: 500;
+      }
+    }
+  }
+}

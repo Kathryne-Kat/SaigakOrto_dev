@@ -1,0 +1,44 @@
+.breadcrumbs {
+  & ul {
+    display: flex;
+    & li {
+      font-family: $second-family;
+      // font-family: "Mulish", sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+}
+.pg-shlem-hero-wrap {
+  background: url(/img/pg-serv-shlem-hero.jpg);
+  background-repeat: no-repeat;
+  height: 352px;
+  & h1 {
+    font-weight: 600;
+    font-size: 62px;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 32px;
+    padding-right: 20px;
+  }
+}
+
+.pg-sheno-content__menu .pg-shlem-content-menu-one {
+  width: 370px;
+  &.active {
+    &::before {
+      top: 26px;
+    }
+  }
+}
+
+.pg-sheno-content__item {
+  &.item-one-shlem {
+    & ul {
+      column-count: 1;
+      column-gap: 0;
+    }
+  }
+}

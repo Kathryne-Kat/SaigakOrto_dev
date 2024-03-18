@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DneprStroy</title>
+    <title>СайгакОрто</title>
     <link rel="stylesheet" href="./fonts/stylesheet.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link
@@ -21,21 +21,24 @@
           <nav class="header__menu">
             <ul class="header__menu-list row">
               <li><a href="/">Главная</a></li>
-              <li><a href="#">Услуги</a></li>
+              <li class="menu-item-1" id="menu-item-1">
+                <a href="#">Услуги</a>
+              </li>
               <li><a href="#">Отзывы</a></li>
               <li><a href="#">Специалисты</a></li>
               <li><a href="#">Статьи</a></li>
               <li><a href="#">Контакты</a></li>
             </ul>
+            <ul class="menu-serv is-hidden" id="menu-serv">
+              <li><a href="/">Консультации и осмотры</a></li>
+              <li><a href="#">Шрот терапия</a></li>
+              <li><a href="#">Аппарат на нижние конечности</a></li>
+              <li><a href="./page-serv-sheno.html">Корсет Шено</a></li>
+              <li><a href="./page-serv-ortez.html">Ортезирование</a></li>
+              <li><a href="./page-serv-shlem.html">Ортопедический шлем</a></li>
+              <li><a href="#">Лечение косолапости</a></li>
+            </ul>
           </nav>
-          <!-- <div class="header-bottom-leng row">
-            <select class="select" name="language" aria-label="select">
-              <option value="UA" disabled selected>UA</option>            
-              <option value="RU">RU</option>
-              <option value="EN">EN</option>
-            </select>
-            <img class="btn-leng" src="img/icon/leng_icon.svg" alt="leng" />
-          </div> -->
           <div class="header__tel row">
             <a href="tel:+77089118447"
               ><img src="./img/icon/Phone.svg" alt="icon" />+7 (708) 911 84
@@ -318,15 +321,15 @@
                   <p>Стаж в ортопедии</p>
                 </li>
                 <li>
-                  <h5>10k+</h5>
+                  <h5>10<span>k+</span></h5>
                   <p>Довольных клиентов</p>
                 </li>
                 <li>
-                  <h5>5k+</h5>
+                  <h5>5<span>k+</span></h5>
                   <p>Корсетов Шено</p>
                 </li>
                 <li>
-                  <h5>15k+</h5>
+                  <h5>15<span>k+</span></h5>
                   <p>Изготовлено Ортезов</p>
                 </li>
               </ul>
@@ -657,7 +660,82 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container row">
+        <div class="footer__item-wrap footer-one">
+          <div class="footer__logo logo">
+            <a href="/"><img src="/img/logo.svg" alt="logo" /></a>
+          </div>
+          <h6>График работы</h6>
+          <ul>
+            <li><span>Пн - Вс |</span> 9:00-19:00</li>
+            <li><span>Суббота |</span> 10:00-16:00</li>
+            <li><span>Воскресенье |</span> Выходной</li>
+          </ul>
+        </div>
+        <div class="footer__item-wrap footer-two">
+          <h6>Услуги</h6>
+          <ul>
+            <li><a href="#">Корсет Шено</a></li>
+            <li><a href="#">Ортезирование</a></li>
+            <li><a href="#">Ортопедический шлем</a></li>
+            <li><a href="#">Аппарат на нижние конечности и туловище</a></li>
+            <li><a href="#">Шрот терапия</a></li>
+            <li><a href="#">Консультации и осмотры</a></li>
+            <li><a href="#">Лечение косолапости</a></li>
+          </ul>
+        </div>
+        <div class="footer__item-wrap footer-three">
+          <h6>Соц. сети</h6>
+          <ul>
+            <li>
+              <a href="#"
+                ><img src="./img/icon/FacebookLogo.svg" alt="icon" />
+                <p>Facebook</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./img/icon/InstagramLogo.svg" alt="icon" />
+                <p>Instagram</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./img/icon/YoutubeLogo.svg" alt="icon" />
+                <p>Youtube</p></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item-wrap footer-fore">
+          <h6>Контакты</h6>
+          <ul>
+            <li>
+              <a href="https://maps.app.goo.gl/k7hEGbN6Zoa7bPBv5"
+                ><img src="./img/icon/MapPin_big.svg" alt="icon" />
+                <p>Алматы, Кажымукана 16/1</p></a
+              >
+            </li>
+            <li>
+              <a tel:+77089113854
+                ><img src="./img/icon/Phone_bg.svg" alt="icon" />
+                <p>+7 (708) 911 38 54</p></a
+              >
+            </li>
+            <li>
+              <a mail:info@saigak-orto.kz
+                ><img src="./img/icon/Envelope.svg" alt="icon" />
+                <p>info@saigak-orto.kz</p></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copy">
+        <p>© 2024 Ортопедический центр Алматы | Все права защищены</p>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.7.0.min.js"

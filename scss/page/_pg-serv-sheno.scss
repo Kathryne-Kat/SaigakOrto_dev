@@ -1,0 +1,159 @@
+.breadcrumbs {
+  & ul {
+    display: flex;
+    & li {
+      font-family: $second-family;
+      // font-family: "Mulish", sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    & li:last-child {
+      color: $accent-color;
+      font-weight: 700;
+    }
+  }
+}
+.pg-sheno-hero-wrap {
+  background: url(/img/pg-serv-hero.jpg);
+  background-repeat: no-repeat;
+  height: 352px;
+  & h1 {
+    font-weight: 600;
+    font-size: 62px;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 32px;
+  }
+}
+.pg-sheno-content {
+  margin-top: 48px;
+  & h2 {
+    display: none;
+  }
+  & .row {
+    gap: 5%;
+    align-items: start;
+  }
+  &__menu {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    & li {
+      border-radius: 38px;
+      padding: 14px 24px;
+      background: $primary-color;
+      color: #a2a2a2;
+      width: max-content;
+      position: relative;
+      &:hover {
+        border-radius: 38px;
+        padding: 14px 24px;
+        background: #edf9f9;
+        font-weight: 600;
+        font-size: 16px;
+        // text-align: center;
+        color: $accent-color;
+      }
+      &.active {
+        border-radius: 28px;
+        padding: 14px 24px;
+        background: $accent-color;
+        color: $primary-color;
+        padding-left: 47px;
+        &::before {
+          content: url(/img/icon/Star_1.svg);
+          position: absolute;
+          top: 16px;
+          left: 8px;
+          margin-right: 8px;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+  &__content {
+    width: 65%;
+  }
+  &__item {
+    padding-bottom: 48px;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 40px;
+    & h3 {
+      font-weight: 600;
+      font-size: 32px;
+      // text-align: center;
+      color: #12253a;
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+    & p {
+      line-height: 1.5;
+      color: #555;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    & strong {
+      font-style: italic;
+      font-weight: 700;
+    }
+    & b {
+      font-style: italic;
+      font-weight: 700;
+    }
+    & img {
+      width: 100%;
+      object-fit: cover;
+      margin-top: 24px;
+      // margin-bottom: 24px;
+    }
+    &.item-two {
+      padding-bottom: 24px;
+    }
+    & h4 {
+      font-weight: 500;
+      font-size: 20px;
+      margin-bottom: 16px;
+      margin-top: 26px;
+    }
+
+    & ul {
+      column-count: 2;
+      column-gap: 48px;
+
+      & li {
+        position: relative;
+        // display: flex;
+        // width: 600px;
+        margin-bottom: 24px;
+        & p {
+          margin-bottom: 0;
+          margin-left: 22px;
+          padding-left: 12px;
+          width: 100%;
+        }
+        &::before {
+          content: "";
+          background: url("/img/icon/Checks-sheno.svg") center center no-repeat;
+          width: 22px;
+          height: 26px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          // left: 0;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &.item-six {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+}

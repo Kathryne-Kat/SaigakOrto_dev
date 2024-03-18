@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>СайгакОрто</title>
+    <link rel="stylesheet" href="./fonts/stylesheet.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="header section">
+      <div class="container">
+        <div class="header__container row">
+          <div class="header__logo logo">
+            <a href="/"><img src="/img/logo.svg" alt="logo" /></a>
+          </div>
+          <nav class="header__menu">
+            <ul class="header__menu-list row">
+              <li><a href="/">Главная</a></li>
+              <li class="menu-item-1" id="menu-item-1">
+                <a href="#">Услуги</a>
+              </li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Специалисты</a></li>
+              <li><a href="#">Статьи</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+            <ul class="menu-serv is-hidden" id="menu-serv">
+              <li><a href="/">Консультации и осмотры</a></li>
+              <li><a href="#">Шрот терапия</a></li>
+              <li><a href="#">Аппарат на нижние конечности</a></li>
+              <li><a href="./page-serv-sheno.html">Корсет Шено</a></li>
+              <li><a href="./page-serv-ortez.html">Ортезирование</a></li>
+              <li><a href="#">Ортопедический шлем</a></li>
+              <li><a href="#">Лечение косолапости</a></li>
+            </ul>
+          </nav>
+          <div class="header__tel row">
+            <a href="tel:+77089118447"
+              ><img src="./img/icon/Phone.svg" alt="icon" />+7 (708) 911 84
+              47</a
+            >
+          </div>
+          <div class="header-burger">
+            <img src="./img/icon/burger.svg" alt="меню" />
+          </div>
+        </div>
+      </div>
+      <div class="burger-menu">
+        <div class="mobile-menu-wrap">
+          <div class="mob-menu-leng-wr row">
+            <div class="header-bottom-leng leng-mob row">
+              <select class="select" name="language" aria-label="select">
+                <option value="UA" disabled selected>UA</option>
+                <!-- <option value="UA">UA</option> -->
+                <option value="RU">RU</option>
+                <option value="EN">EN</option>
+              </select>
+              <img class="btn-leng" src="img/icon/leng_icon.svg" alt="leng" />
+            </div>
+            <button class="button-x mobile-menu-close" type="button">
+              <img src="./img/icon/X.svg" alt="іконка" />
+            </button>
+          </div>
+          <nav class="mobile-menu">
+            <ul class="mobile-menu-list">
+              <li><a href="/">Главная</a></li>
+              <li>
+                <div class="" id="accordeon-menu-mob">
+                  <div class="row accm1-head">
+                    <a href="/page-generator.html">Продукти</a>
+                    <div>
+                      <button type="button" class="faq-img faq-open1">
+                        <img src="./img/icon/CaretDown_s.svg" alt="іконка" />
+                      </button>
+                      <button
+                        type="button"
+                        class="faq-img faq-closed1 is-hidden"
+                      >
+                        <img src="./img/icon/CaretUp.svg" alt="іконка" />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="accm1-body column is-hidden">
+                    <div class="marg column">
+                      <a href="/page-generator.html">Генератори</a>
+                      <a href="/page-generator.html">Запчастини</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="" id="accordeon-menu-mob2">
+                  <div class="row accm2-head">
+                    <a href="/page-generator.html">Послуги</a>
+                    <div>
+                      <button type="button" class="faq-img faq-open1">
+                        <img src="./img/icon/CaretDown_s.svg" alt="іконка" />
+                      </button>
+                      <button
+                        type="button"
+                        class="faq-img faq-closed1 is-hidden"
+                      >
+                        <img src="./img/icon/CaretUp.svg" alt="іконка" />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="accm2-body column is-hidden">
+                    <div class="marg column">
+                      <a href="/page-generator.html"
+                        >Будівництво сонячних станцій</a
+                      >
+                      <a href="/page-generator.html">Електромонтажні роботи</a>
+                      <a href="/page-generator.html">Сервісне обслуговування</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><a href="/page-about.html">Про нас</a></li>
+              <li><a href="/page-obj.html">Об'єкти</a></li>
+              <li><a href="/page-blog.html">Блог</a></li>
+              <li><a href="/page-reviews.html">Відгуки</a></li>
+            </ul>
+          </nav>
+          <button class="menu-btn-1 btn popup-open" type="button">
+            Залишити заявку
+          </button>
+          <ul class="footer-list-cont menu-mob-list-cont footer-list">
+            <li>
+              <a href="#"
+                ><img src="./img/icon/Phoneb.svg" alt="icon" />+38 (063) 292 48
+                06</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./img/icon/Envelopeb.svg"
+                  alt="icon"
+                />info@profenergy.com.ua</a
+              >
+            </li>
+            <li>
+              <a href="https://maps.app.goo.gl/vb2EwiMuiRdBmJtP9"
+                ><img src="./img/icon/MapPinb.svg" alt="icon" />Україна, 49112,
+                Днiпропетровська обл., мiсто Днiпро, ВУЛИЦЯ ЕЛЕКТРИЧНА, будинок
+                2</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="breadcrumbs container">
+        <ul>
+          <li>Главная</li>
+          <li>/</li>
+          <li>Услуги</li>
+          <li>/</li>
+          <li>Корсет Шено</li>
+        </ul>
+      </div>
+      <section class="pg-ortez-hero section">
+        <div class="container">
+          <div class="pg-ortez-hero-wrap">
+            <h1>Ортезирование</h1>
+            <p>
+              Индивидуальные ортезы из качественных материалов — консультация,
+              подбор, изготовление.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="pg-ortez-content section">
+        <h2>Ортезирование - описание</h2>
+        <div class="container">
+          <div class="pg-ortez-content__content">
+            <div class="pg-ortez-content__item item-one" id="item-one">
+              <p>
+                Ортезы — медицинские приборы, которые заменяют, компенсируют,
+                восстанавливают и поддерживают функции опорно-двигательного
+                аппарата. <br /><br />
+                Это могут быть туторы, шины, бандажи, ортопедические аппараты,
+                стельки, корсеты и т.д. — то есть многофункциональные
+                приспособления для разгрузки, фиксирования, коррекции скелетной
+                и нервно-мышечной структуры.
+              </p>
+              <img src="./img/pg-serv-sheno-1.jpg" alt="photo" />
+              <h4>Ортезирование применяют при:</h4>
+              <ul>
+                <li>
+                  <img
+                    class="icon-checks"
+                    src="./img/icon/Checks-sheno.svg"
+                    alt="icon"
+                  />
+                  <p>Сколиозе позвоночника больше 45° у взрослых.</p>
+                </li>
+                <li>
+                  <img
+                    class="icon-checks"
+                    src="./img/icon/Checks-sheno.svg"
+                    alt="icon"
+                  />
+                  <p>Сколиозе позвоночника больше 45° у взрослых.</p>
+                </li>
+                <li>
+                  <img
+                    class="icon-checks"
+                    src="./img/icon/Checks-sheno.svg"
+                    alt="icon"
+                  />
+                  <p>Сколиозе позвоночника больше 45° у взрослых.</p>
+                </li>
+                <li>
+                  <img
+                    class="icon-checks"
+                    src="./img/icon/Checks-sheno.svg"
+                    alt="icon"
+                  />
+                  <p>Сколиозе позвоночника больше 45° у взрослых.</p>
+                </li>
+                <li>
+                  <img
+                    class="icon-checks"
+                    src="./img/icon/Checks-sheno.svg"
+                    alt="icon"
+                  />
+                  <p>Сколиозе позвоночника больше 45° у взрослых.</p>
+                </li>
+                <li>
+                  <img
+                    class="icon-checks"
+                    src="./img/icon/Checks-sheno.svg"
+                    alt="icon"
+                  />
+                  <p>Сколиозе позвоночника больше 45° у взрослых.</p>
+                </li>
+              </ul>
+              <strong>
+                Подобрать соответствующий каждому индивидуальному случаю аппарат
+                может только врач.
+              </strong>
+              <img src="./img/pg-serv-sheno-1.jpg" alt="photo" />
+            </div>
+            <div class="pg-ortez-content__item item-six" id="item-six">
+              <h5>
+                Изготовление ортеза — сложный процесс, который включает в себя:
+              </h5>
+              <p>
+                1. Первичный осмотр <br />
+                2. 3D-сканирование спины пациента. <br />
+                3. 3D-моделирование конструкции.<br />
+                4. Индивидуальная заготовка на станке с ЧПУ (фрезеровка).<br />
+                5. Изготовление корсетной гильзы по индивидуальной заготовке.<br />
+              </p>
+              <p class="pg-ortez-strong">
+                Стоимость изготовления ортеза - по запросу.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="form-s section">
+        <div class="container">
+          <div class="form-s__item-wrap row">
+            <div class="form-s__item">
+              <h2 class="section-title">Получить консультацию</h2>
+              <p>
+                Оставьте свои контакты и администратор центра свяжется с вами в
+                ближайшее время и запишет на прием к специалисту
+              </p>
+              <div class="form-s-form">
+                <form action="">
+                  <input type="text" placeholder="Имя" />
+                  <input type="tel" placeholder="Номер телефона*" />
+                  <button class="form-s-btn" type="submit">Жду звонка</button>
+                </form>
+              </div>
+            </div>
+            <div class="form-s__item form-s__item-img">
+              <img src="./img/form_all.png" alt="услуги" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container row">
+        <div class="footer__item-wrap footer-one">
+          <div class="footer__logo logo">
+            <a href="/"><img src="/img/logo.svg" alt="logo" /></a>
+          </div>
+          <h6>График работы</h6>
+          <ul>
+            <li><span>Пн - Вс |</span> 9:00-19:00</li>
+            <li><span>Суббота |</span> 10:00-16:00</li>
+            <li><span>Воскресенье |</span> Выходной</li>
+          </ul>
+        </div>
+        <div class="footer__item-wrap footer-two">
+          <h6>Услуги</h6>
+          <ul>
+            <li><a href="#">Корсет Шено</a></li>
+            <li><a href="#">Ортезирование</a></li>
+            <li><a href="#">Ортопедический шлем</a></li>
+            <li><a href="#">Аппарат на нижние конечности и туловище</a></li>
+            <li><a href="#">Шрот терапия</a></li>
+            <li><a href="#">Консультации и осмотры</a></li>
+            <li><a href="#">Лечение косолапости</a></li>
+          </ul>
+        </div>
+        <div class="footer__item-wrap footer-three">
+          <h6>Соц. сети</h6>
+          <ul>
+            <li>
+              <a href="#"
+                ><img src="./img/icon/FacebookLogo.svg" alt="icon" />
+                <p>Facebook</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./img/icon/InstagramLogo.svg" alt="icon" />
+                <p>Instagram</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./img/icon/YoutubeLogo.svg" alt="icon" />
+                <p>Youtube</p></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item-wrap footer-fore">
+          <h6>Контакты</h6>
+          <ul>
+            <li>
+              <a href="https://maps.app.goo.gl/k7hEGbN6Zoa7bPBv5"
+                ><img src="./img/icon/MapPin_big.svg" alt="icon" />
+                <p>Алматы, Кажымукана 16/1</p></a
+              >
+            </li>
+            <li>
+              <a tel:+77089113854
+                ><img src="./img/icon/Phone_bg.svg" alt="icon" />
+                <p>+7 (708) 911 38 54</p></a
+              >
+            </li>
+            <li>
+              <a mail:info@saigak-orto.kz
+                ><img src="./img/icon/Envelope.svg" alt="icon" />
+                <p>info@saigak-orto.kz</p></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copy">
+        <p>© 2024 Ортопедический центр Алматы | Все права защищены</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./js/script.js"></script>
+    <script type="module" src="./js/swiper.js"></script>
+  </body>
+</html>
