@@ -1,0 +1,17 @@
+.breadcrumbs {
+  & ul {
+    display: flex;
+    & li {
+      font-family: $second-family;
+      // font-family: "Mulish", sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    & li:last-child {
+      color: $accent-color;
+      font-weight: 700;
+    }
+  }
+}

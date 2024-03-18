@@ -1,19 +1,7 @@
-.breadcrumbs {
-  & ul {
-    display: flex;
-    & li {
-      font-family: $second-family;
-      // font-family: "Mulish", sans-serif;
-      font-weight: 300;
-      font-size: 14px;
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-  }
-}
 .pg-shlem-hero-wrap {
   background: url(/img/pg-serv-shlem-hero.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   height: 352px;
   & h1 {
     font-weight: 600;
@@ -41,4 +29,8 @@
       column-gap: 0;
     }
   }
+}
+.pg-konech-content__content {
+  margin-left: auto;
+  margin-right: auto;
 }

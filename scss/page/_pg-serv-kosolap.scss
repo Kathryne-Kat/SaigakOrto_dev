@@ -1,0 +1,79 @@
+.pg-kosolap-hero {
+  margin-bottom: 36px;
+}
+.pg-kosolap-hero-wrap {
+  background: url(/img/pg-serv-shlem-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 352px;
+  & h1 {
+    font-weight: 600;
+    font-size: 62px;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 32px;
+    padding-right: 20px;
+  }
+}
+.pg-kosolap-content {
+  & h2 {
+    display: none;
+  }
+}
+.pg-sheno-content__menu .pg-shlem-content-menu-one {
+  width: 370px;
+  &.active {
+    &::before {
+      top: 26px;
+    }
+  }
+}
+
+.pg-sheno-content__item {
+  &.item-one-shlem {
+    & ul {
+      column-count: 1;
+      column-gap: 0;
+    }
+  }
+}
+.pg-konech-content__content {
+  margin-left: auto;
+  margin-right: auto;
+}
+.pg-kosolap-content-text {
+  column-count: 2;
+  column-gap: 80px;
+  line-height: 1.5;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 48px;
+}
+.item-one-kosolap {
+  & img {
+    margin-bottom: 24px;
+  }
+}
+.item-kosolap-three {
+  & div {
+    width: max-content;
+    margin-top: 24px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    border-radius: 38px;
+    padding: 14px 24px;
+    // width: 516px;
+    // height: 48px;
+    background: #edf9f9;
+    font-weight: 600;
+    // text-align: center;
+    color: $accent-color;
+    & p {
+      color: $accent-color;
+    }
+  }
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}

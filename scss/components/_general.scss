@@ -7,6 +7,7 @@ body {
   color: var(--primary-text-color);
   background-color: var(--primary-color);
   line-height: normal;
+  margin-left: 0;
   // position: relative;
 
   .no-scroll {
@@ -154,7 +155,7 @@ body::after {
   line-height: 150%;
 }
 .section-name {
-  color: var(--accent-color);
+  color: $accent-color;
   font-size: 14px;
   font-weight: 600;
   line-height: 150%;

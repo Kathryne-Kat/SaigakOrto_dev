@@ -4,6 +4,7 @@
 @import "components/general";
 @import "components/btn";
 @import "components/select";
+@import "components/breadcrumbs";
 @import "layouts/header";
 @import "layouts/header-burger";
 @import "layouts/hero";
@@ -17,6 +18,11 @@
 @import "layouts/form";
 @import "layouts/modal";
 @import "layouts/footer";
+@import "page/pg-about";
 @import "page/pg-serv-sheno";
 @import "page/pg-serv-ortez";
 @import "page/pg-serv-shlem";
+@import "page/pg-serv-konech";
+@import "page/pg-serv-shrot";
+@import "page/pg-serv-kosolap";
+@import "page/pg-serv-konsult";

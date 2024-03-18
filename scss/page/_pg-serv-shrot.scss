@@ -1,0 +1,62 @@
+.pg-shrot-hero {
+}
+.pg-shrot-hero-wrap {
+  background: url(/img/pg-serv-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 352px;
+  & h1 {
+    font-weight: 600;
+    font-size: 62px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+  }
+}
+
+.item-konech-one {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  & ul {
+    column-count: 1;
+    column-gap: 0;
+  }
+}
+
+.item-shrot-one {
+  & i {
+    font-weight: 500;
+  }
+}
+.item-shrot-thre {
+  & ul {
+    column-count: 1;
+    column-gap: 0;
+  }
+}
+.item-shrot-five {
+  & div {
+    width: max-content;
+    margin-top: 24px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    border-radius: 38px;
+    padding: 14px 24px;
+    // width: 516px;
+    // height: 48px;
+    background: #edf9f9;
+    font-weight: 600;
+    // text-align: center;
+    color: $accent-color;
+    & p {
+      color: $accent-color;
+    }
+  }
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
