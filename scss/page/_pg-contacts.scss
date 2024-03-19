@@ -1,0 +1,29 @@
+.pg-contacts__wrap {
+  display: flex;
+  gap: 90px;
+  align-items: start;
+  max-width: 1140px;
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  // height: 383px;
+  & .cont-1,
+  & .cont-2 {
+    width: 27%;
+  }
+  & .cont-3 {
+    width: 46%;
+    & div a {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 16px;
+      & p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

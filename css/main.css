@@ -150,40 +150,10 @@ body a {
   color: var(--primary-text-color);
 }
 
-.img-bg1 {
-  position: absolute;
-  top: 100px;
-  right: 0;
-  width: 50px;
-  height: 100px;
-  background-image: url("/img/icon/bg1.svg");
-  background-position: 0 100px;
-}
-
-.img-bg2 {
-  position: absolute;
-  top: 200px;
-  left: 0;
-  width: 60px;
-  height: 120px;
-  background-image: url("/img/icon/bg2.svg");
-  background-position: 0 100px;
-}
-
-.img-bg3 {
-  position: absolute;
-  top: 70px;
-  right: 0;
-  width: 50px;
-  height: 100px;
-  background-image: url("/img/icon/bg3.svg");
-  background-position: 0 100px;
-}
-
-body::before {
+.home::before {
   content: "";
   position: absolute;
-  top: 120px;
+  top: 110px;
   right: 0;
   width: 55px;
   height: 105px;
@@ -192,10 +162,10 @@ body::before {
 }
 
 /* Правый фон */
-body::after {
+.home::after {
   content: "";
   position: absolute;
-  top: 300px;
+  top: 280px;
   left: 0px;
   width: 80px;
   height: 120px;
@@ -1024,6 +994,18 @@ body::after {
   margin: 0;
 }
 
+main.about {
+  /* Правый фон */
+}
+main.about::before {
+  top: 120px;
+  right: 0;
+}
+main.about::after {
+  top: 220px;
+  left: 0px;
+}
+
 .pg-about-hero h1 {
   font-weight: 600;
   font-size: 62px;
@@ -1108,6 +1090,82 @@ body::after {
   margin-top: 0;
   margin-bottom: 0;
   flex-grow: 1;
+}
+
+.pg-service {
+  margin-top: 32px;
+}
+
+.pg-service__list {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.pg-service__list li {
+  width: 32%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  border: 1px solid #ededed;
+  border-radius: 16px;
+}
+.pg-service__list li img {
+  border-radius: 14px 14px 0 0;
+  width: 100%;
+  height: 210px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.pg-service__list li div {
+  padding: 16px;
+}
+.pg-service__list li h3 {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.5;
+}
+.pg-service__list li p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+main.team {
+  background: url(/img/team-bg-1.svg), url(/img/team-bg-2.svg);
+  background-position: 0 50px, 100% -30px;
+  background-repeat: no-repeat;
+}
+
+.pg-contacts__wrap {
+  display: flex;
+  gap: 90px;
+  align-items: start;
+  max-width: 1140px;
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pg-contacts__wrap .cont-1, .pg-contacts__wrap .cont-2 {
+  width: 27%;
+}
+.pg-contacts__wrap .cont-3 {
+  width: 46%;
+}
+.pg-contacts__wrap .cont-3 div a {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+.pg-contacts__wrap .cont-3 div a p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .pg-sheno-hero-wrap {

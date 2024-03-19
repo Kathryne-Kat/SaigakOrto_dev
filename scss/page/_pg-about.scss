@@ -1,3 +1,14 @@
+main.about {
+  &::before {
+    top: 120px;
+    right: 0;
+  }
+  /* Правый фон */
+  &::after {
+    top: 220px;
+    left: 0px;
+  }
+}
 .pg-about-hero {
   & h1 {
     font-weight: 600;
