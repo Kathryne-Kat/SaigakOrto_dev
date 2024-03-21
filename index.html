@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
   </head>
   <body>
@@ -16,7 +21,7 @@
       <div class="container">
         <div class="header__container row">
           <div class="header__logo logo">
-            <a href="/"><img src="/img/logo.svg" alt="logo" /></a>
+            <a href="/"><img src="./img/logo.svg" alt="logo" /></a>
           </div>
           <nav class="header__menu">
             <ul class="header__menu-list row">
@@ -25,9 +30,9 @@
               <li class="menu-item-1" id="menu-item-1">
                 <a href="/page-service.html">Услуги</a>
               </li>
-              <li><a href="#">Отзывы</a></li>
+              <li><a href="./page-reviews.html">Отзывы</a></li>
               <li><a href="./page-team.html">Специалисты</a></li>
-              <li><a href="#">Статьи</a></li>
+              <li><a href="./page-articals.html">Статьи</a></li>
               <li><a href="./page-contacts.html">Контакты</a></li>
             </ul>
             <ul class="menu-serv is-hidden" id="menu-serv">
@@ -167,7 +172,7 @@
     <main class="home">
       <section class="hero section">
         <div class="container">
-          <div class="custom-select-1">
+          <!-- <div class="custom-select-1">
             <select class="select" name="language">
               <option value="Алматы" disabled>Алматы</option>
               <option value="Алматы">Алматы</option>
@@ -175,21 +180,29 @@
               <option value="Астана">Астана</option>
               <option value="Атырау">Атырау</option>
             </select>
-          </div>
-          <!-- <div class="custom-select">
-            <select>
-              <option value="option1">Алматы</option>
-              <option value="option2">Алматы</option>
-              <option value="option3">Алматы</option>
-            </select>
           </div> -->
+
+          <div class="custom-dropdown-container">
+            <div class="custom-dropdown-wrapper">
+              <!-- Кастомный выпадающий список -->
+              <div class="custom-dropdown">Все</div>
+              <!-- Опции для кастомного выпадающего списка -->
+              <ul class="custom-dropdown-list">
+                <li data-value="all">Все</li>
+                <li data-value="almaty">Алматы</li>
+                <li data-value="ust-kamenogorsk">Усть-Каменогорск</li>
+                <li data-value="astana">Астана</li>
+                <li data-value="atyrau">Атырау</li>
+              </ul>
+            </div>
+          </div>
           <h1>Ортопедический центр Сайгак Орто</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua
           </p>
           <button class="btn" type="button">Консультация</button>
-          <img src="/img/hero.jpg" alt="photo" />
+          <img src="./img/hero.jpg" alt="photo" />
         </div>
       </section>
       <section class="services section">
@@ -202,7 +215,46 @@
             <div class="services-list swiper-wrapper">
               <div class="services__list-item section-item swiper-slide">
                 <a href="#"
-                  ><img src="./img/no_image.jpg" alt="услуги" />
+                  ><img src="./img/serv-7.jpg" alt="услуги" />
+                  <div class="text-item-wrap">
+                    <h3 class="title-item">Консультации и осмотры</h3>
+                    <p class="text-item">
+                      Наши консультации направлены не только на лечение, но и на
+                      предупреждение возможных проблем, помогая сохранить ваше
+                      здоровье.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="services__list-item section-item swiper-slide">
+                <a href="#"
+                  ><img src="./img/serv-6.jpg" alt="услуги" />
+                  <div class="text-item-wrap">
+                    <h3 class="title-item">Шрот терапия</h3>
+                    <p class="text-item">
+                      Гимнастика по методу Катарины Шрот — эффективное лечение
+                      сколиоза у взрослых и детей. Основа метода: статическая
+                      нагрузка и особое дыхание.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="services__list-item section-item swiper-slide">
+                <a href="#"
+                  ><img src="./img/serv-2.jpg" alt="услуги" />
+                  <div class="text-item-wrap">
+                    <h3 class="title-item">Аппарат на нижние конечности</h3>
+                    <p class="text-item">
+                      Аппараты на нижние конечности и туловище предназначены для
+                      помощи в тех функциях, где тело не справляется
+                      самостоятельно.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="services__list-item section-item swiper-slide">
+                <a href="#"
+                  ><img src="./img/serv-1.jpg" alt="услуги" />
                   <div class="text-item-wrap">
                     <h3 class="title-item">Корсет Шено</h3>
                     <p class="text-item">
@@ -216,98 +268,38 @@
               </div>
               <div class="services__list-item section-item swiper-slide">
                 <a href="#"
-                  ><img src="./img/no_image.jpg" alt="услуги" />
+                  ><img src="./img/serv-2.jpg" alt="услуги" />
                   <div class="text-item-wrap">
-                    <h3 class="title-item">Корсет Шено</h3>
+                    <h3 class="title-item">Ортезирование</h3>
                     <p class="text-item">
-                      Лечение сколиоза по методу Жака Шено заключается в
-                      длительном ношении ортопедического корсета. Корсет
-                      препятствует мышечной атрофии, а также способствует
-                      беспрепятственному дыханию.
+                      Ортезы — медицинские приборы, которые заменяют,
+                      компенсируют, восстанавливают и поддерживают функции
+                      опорно-двигательного аппарата.
                     </p>
                   </div>
                 </a>
               </div>
               <div class="services__list-item section-item swiper-slide">
                 <a href="#"
-                  ><img src="./img/no_image.jpg" alt="услуги" />
+                  ><img src="./img/serv-3.jpg" alt="услуги" />
                   <div class="text-item-wrap">
-                    <h3 class="title-item">Корсет Шено</h3>
+                    <h3 class="title-item">Ортопедический шлем</h3>
                     <p class="text-item">
-                      Лечение сколиоза по методу Жака Шено заключается в
-                      длительном ношении ортопедического корсета. Корсет
-                      препятствует мышечной атрофии, а также способствует
-                      беспрепятственному дыханию.
+                      Ортопедический шлем — индивидуальный ортез для ребенка, у
+                      которого обнаружена деформация головы.
                     </p>
                   </div>
                 </a>
               </div>
               <div class="services__list-item section-item swiper-slide">
                 <a href="#"
-                  ><img src="./img/no_image.jpg" alt="услуги" />
+                  ><img src="./img/serv-4.jpg" alt="услуги" />
                   <div class="text-item-wrap">
-                    <h3 class="title-item">Корсет Шено</h3>
+                    <h3 class="title-item">Лечение косолапости</h3>
                     <p class="text-item">
-                      Лечение сколиоза по методу Жака Шено заключается в
-                      длительном ношении ортопедического корсета. Корсет
-                      препятствует мышечной атрофии, а также способствует
-                      беспрепятственному дыханию.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div class="services__list-item section-item swiper-slide">
-                <a href="#"
-                  ><img src="./img/no_image.jpg" alt="услуги" />
-                  <div class="text-item-wrap">
-                    <h3 class="title-item">Корсет Шено</h3>
-                    <p class="text-item">
-                      Лечение сколиоза по методу Жака Шено заключается в
-                      длительном ношении ортопедического корсета. Корсет
-                      препятствует мышечной атрофии, а также способствует
-                      беспрепятственному дыханию.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div class="services__list-item section-item swiper-slide">
-                <a href="#"
-                  ><img src="./img/no_image.jpg" alt="услуги" />
-                  <div class="text-item-wrap">
-                    <h3 class="title-item">Корсет Шено</h3>
-                    <p class="text-item">
-                      Лечение сколиоза по методу Жака Шено заключается в
-                      длительном ношении ортопедического корсета. Корсет
-                      препятствует мышечной атрофии, а также способствует
-                      беспрепятственному дыханию.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div class="services__list-item section-item swiper-slide">
-                <a href="#"
-                  ><img src="./img/no_image.jpg" alt="услуги" />
-                  <div class="text-item-wrap">
-                    <h3 class="title-item">Корсет Шено</h3>
-                    <p class="text-item">
-                      Лечение сколиоза по методу Жака Шено заключается в
-                      длительном ношении ортопедического корсета. Корсет
-                      препятствует мышечной атрофии, а также способствует
-                      беспрепятственному дыханию.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div class="services__list-item section-item swiper-slide">
-                <a href="#"
-                  ><img src="./img/no_image.jpg" alt="услуги" />
-                  <div class="text-item-wrap">
-                    <h3 class="title-item">Корсет Шено</h3>
-                    <p class="text-item">
-                      Лечение сколиоза по методу Жака Шено заключается в
-                      длительном ношении ортопедического корсета. Корсет
-                      препятствует мышечной атрофии, а также способствует
-                      беспрепятственному дыханию.
+                      Лечение косолапости начинается с тщательной диагностики,
+                      на основе полученных данных наши специалисты разрабатывают
+                      план лечения.
                     </p>
                   </div>
                 </a>
@@ -317,6 +309,7 @@
           </div>
         </div>
       </section>
+
       <section class="advantages section">
         <div class="container">
           <h4 class="section-name">приемущества</h4>
@@ -757,11 +750,15 @@
         <p>© 2024 Ортопедический центр Алматы | Все права защищены</p>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.7.0.min.js"
       integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
       crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script type="module" src="./js/script.js"></script>
     <script type="module" src="./js/swiper.js"></script>

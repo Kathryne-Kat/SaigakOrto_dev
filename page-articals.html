@@ -23,12 +23,12 @@
               <li><a href="/">Главная</a></li>
               <li><a href="/page-about.html">О нас</a></li>
               <li class="menu-item-1" id="menu-item-1">
-                <a href="#">Услуги</a>
+                <a href="/page-service.html">Услуги</a>
               </li>
               <li><a href="#">Отзывы</a></li>
-              <li><a href="#">Специалисты</a></li>
-              <li><a href="#">Статьи</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="./page-team.html">Специалисты</a></li>
+              <li><a href="./page-articals.html">Статьи</a></li>
+              <li><a href="./page-contacts.html">Контакты</a></li>
             </ul>
             <ul class="menu-serv is-hidden" id="menu-serv">
               <li>
@@ -164,247 +164,201 @@
         </div>
       </div>
     </header>
-    <main class="team">
+    <main>
       <div class="breadcrumbs pg-service-bread container">
         <ul>
           <li>Главная</li>
           <li>/</li>
-          <li>Специалисты</li>
+          <li>Статьи</li>
         </ul>
       </div>
-      <section class="hero pg-contacts-hero section">
-        <div class="container">
-          <h1>Контакты</h1>
+      <section class="hero pg-team-hero pg-art-hero section">
+        <div class="pg-art-hero-wrap">
+          <h1>Статьи</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua
           </p>
-          <!-- <div class="custom-select-1">
-            <select class="select" name="city">
-              <option value="all" disabled>Все</option>
-              <option value="all">Все</option>
-              <option value="almaty">Алматы</option>
-              <option value="ust-kamenogorsk">Усть-Каменогорск</option>
-              <option value="astana">Астана</option>
-              <option value="atyrau">Атырау</option>
-            </select>
-          </div> -->
-          <div class="custom-dropdown-wrapper">
-            <!-- Кастомный выпадающий список -->
-            <div class="custom-dropdown">Все</div>
-            <!-- Опции для кастомного выпадающего списка -->
-            <ul class="custom-dropdown-list">
-              <li data-value="all">Все</li>
-              <li data-value="almaty">Алматы</li>
-              <li data-value="ust-kamenogorsk">Усть-Каменогорск</li>
-              <li data-value="astana">Астана</li>
-              <li data-value="atyrau">Атырау</li>
-            </ul>
-          </div>
         </div>
       </section>
-      <section class="pg-contacts section">
+      <section class="pg-team pg-arts section">
         <div class="container">
-          <ul>
-            <li class="pg-contacts__wrap select-city" id="almaty">
-              <div
-                class="footer__item-wrap footer-one pg-contacts__item cont-1"
-              >
-                <h6>График работы</h6>
-                <ul>
-                  <li><span>Пн - Вс |</span> 9:00-19:00</li>
-                  <li><span>Суббота |</span> 10:00-16:00</li>
-                  <li><span>Воскресенье |</span> Выходной</li>
-                </ul>
-              </div>
-              <div
-                class="footer__item-wrap footer-fore pg-contacts__item cont-2"
-              >
-                <ul>
-                  <li>
-                    <h6>Телефон</h6>
-                    <a tel:+77089113854
-                      ><img src="./img/icon/Phone_bg.svg" alt="icon" />
-                      <p>+7 (708) 911 38 54</p></a
-                    >
-                  </li>
-                  <li>
-                    <h6>Почта</h6>
-                    <a mail:info@saigak-orto.kz
-                      ><img src="./img/icon/Envelope.svg" alt="icon" />
-                      <p>info@saigak-orto.kz</p></a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="footer__item-wrap pg-contacts__item cont-3">
-                <div>
-                  <h6>Адрес</h6>
-                  <a href="https://maps.app.goo.gl/k7hEGbN6Zoa7bPBv5"
-                    ><img src="./img/icon/MapPin_big.svg" alt="icon" />
-                    <p>Алматы, Кажымукана 16/1</p></a
-                  >
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.259326762519!2d76.95563877671158!3d43.22502227112565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836f05ee68fa3d%3A0xac1b3262e7e0cc3c!2zMSwg0YPQu9C40YbQsCDQpdCw0LTQttC40LzRg9C60LDQvdCwIDE2LCDQkNC70LzQsNGC0YsgMDUwMDAwLCDQmtCw0LfQsNGF0YHRgtCw0L0!5e0!3m2!1sru!2sua!4v1710863825637!5m2!1sru!2sua"
-                    width="460"
-                    height="240"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                  ></iframe>
+          <ul class="pg-team__list pg-arts__list team__list row">
+            <li class="team__list__item section-item">
+              <a href="/page-articals-singl.html">
+                <div class="img-wrap">
+                  <img
+                    class="team__img"
+                    src="./img/art-pust.jpg"
+                    alt="услуги"
+                  />
+                  <p class="pg-art-data">25.05.2023</p>
                 </div>
-              </div>
+                <div class="text-item-wrap">
+                  <h3 class="title-item">
+                    Поддерживающие корсеты. Когда и кому они нужны?
+                  </h3>
+                  <p class="text-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore
+                  </p>
+                  <a href="#" class="pg-art-read"><p>Читать далее</p></a>
+                </div>
+              </a>
             </li>
-            <li class="pg-contacts__wrap select-city" id="ust-kamenogorsk">
-              <div
-                class="footer__item-wrap footer-one pg-contacts__item cont-1"
-              >
-                <h6>График работы</h6>
-                <ul>
-                  <li><span>Пн - Вс |</span> 9:00-19:00</li>
-                  <li><span>Суббота |</span> 10:00-16:00</li>
-                  <li><span>Воскресенье |</span> Выходной</li>
-                </ul>
-              </div>
-              <div
-                class="footer__item-wrap footer-fore pg-contacts__item cont-2"
-              >
-                <ul>
-                  <li>
-                    <h6>Телефон</h6>
-                    <a tel:+77089113854
-                      ><img src="./img/icon/Phone_bg.svg" alt="icon" />
-                      <p>+7 (708) 911 38 54</p></a
-                    >
-                  </li>
-                  <li>
-                    <h6>Почта</h6>
-                    <a mail:info@saigak-orto.kz
-                      ><img src="./img/icon/Envelope.svg" alt="icon" />
-                      <p>info@saigak-orto.kz</p></a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="footer__item-wrap pg-contacts__item cont-3">
-                <div>
-                  <h6>Адрес</h6>
-                  <a href="https://maps.app.goo.gl/k7hEGbN6Zoa7bPBv5"
-                    ><img src="./img/icon/MapPin_big.svg" alt="icon" />
-                    <p>Алматы, Кажымукана 16/1</p></a
-                  >
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.259326762519!2d76.95563877671158!3d43.22502227112565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836f05ee68fa3d%3A0xac1b3262e7e0cc3c!2zMSwg0YPQu9C40YbQsCDQpdCw0LTQttC40LzRg9C60LDQvdCwIDE2LCDQkNC70LzQsNGC0YsgMDUwMDAwLCDQmtCw0LfQsNGF0YHRgtCw0L0!5e0!3m2!1sru!2sua!4v1710863825637!5m2!1sru!2sua"
-                    width="460"
-                    height="240"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                  ></iframe>
+            <li class="team__list__item section-item">
+              <a href="./page-team-singl.html">
+                <div class="img-wrap">
+                  <img
+                    class="team__img"
+                    src="./img/art-pust.jpg"
+                    alt="услуги"
+                  />
+                  <p class="pg-art-data">25.05.2023</p>
                 </div>
-              </div>
+                <div class="text-item-wrap">
+                  <h3 class="title-item">
+                    Поддерживающие корсеты. Когда и кому они нужны?
+                  </h3>
+                  <p class="text-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore
+                  </p>
+                  <a href="#" class="pg-art-read"><p>Читать далее</p></a>
+                </div>
+              </a>
             </li>
-            <li class="pg-contacts__wrap select-city" id="astana">
-              <div
-                class="footer__item-wrap footer-one pg-contacts__item cont-1"
-              >
-                <h6>График работы</h6>
-                <ul>
-                  <li><span>Пн - Вс |</span> 9:00-19:00</li>
-                  <li><span>Суббота |</span> 10:00-16:00</li>
-                  <li><span>Воскресенье |</span> Выходной</li>
-                </ul>
-              </div>
-              <div
-                class="footer__item-wrap footer-fore pg-contacts__item cont-2"
-              >
-                <ul>
-                  <li>
-                    <h6>Телефон</h6>
-                    <a tel:+77089113854
-                      ><img src="./img/icon/Phone_bg.svg" alt="icon" />
-                      <p>+7 (708) 911 38 54</p></a
-                    >
-                  </li>
-                  <li>
-                    <h6>Почта</h6>
-                    <a mail:info@saigak-orto.kz
-                      ><img src="./img/icon/Envelope.svg" alt="icon" />
-                      <p>info@saigak-orto.kz</p></a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="footer__item-wrap pg-contacts__item cont-3">
-                <div>
-                  <h6>Адрес</h6>
-                  <a href="https://maps.app.goo.gl/k7hEGbN6Zoa7bPBv5"
-                    ><img src="./img/icon/MapPin_big.svg" alt="icon" />
-                    <p>Алматы, Кажымукана 16/1</p></a
-                  >
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.259326762519!2d76.95563877671158!3d43.22502227112565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836f05ee68fa3d%3A0xac1b3262e7e0cc3c!2zMSwg0YPQu9C40YbQsCDQpdCw0LTQttC40LzRg9C60LDQvdCwIDE2LCDQkNC70LzQsNGC0YsgMDUwMDAwLCDQmtCw0LfQsNGF0YHRgtCw0L0!5e0!3m2!1sru!2sua!4v1710863825637!5m2!1sru!2sua"
-                    width="460"
-                    height="240"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                  ></iframe>
+            <li class="team__list__item section-item">
+              <a href="./page-team-singl.html">
+                <div class="img-wrap">
+                  <img
+                    class="team__img"
+                    src="./img/art-pust.jpg"
+                    alt="услуги"
+                  />
+                  <p class="pg-art-data">25.05.2023</p>
                 </div>
-              </div>
+                <div class="text-item-wrap">
+                  <h3 class="title-item">
+                    Поддерживающие корсеты. Когда и кому они нужны?
+                  </h3>
+                  <p class="text-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore
+                  </p>
+                  <a href="#" class="pg-art-read"><p>Читать далее</p></a>
+                </div>
+              </a>
             </li>
-            <li class="pg-contacts__wrap select-city" id="atyrau">
-              <div
-                class="footer__item-wrap footer-one pg-contacts__item cont-1"
-              >
-                <h6>График работы</h6>
-                <ul>
-                  <li><span>Пн - Вс |</span> 9:00-19:00</li>
-                  <li><span>Суббота |</span> 10:00-16:00</li>
-                  <li><span>Воскресенье |</span> Выходной</li>
-                </ul>
-              </div>
-              <div
-                class="footer__item-wrap footer-fore pg-contacts__item cont-2"
-              >
-                <ul>
-                  <li>
-                    <h6>Телефон</h6>
-                    <a tel:+77089113854
-                      ><img src="./img/icon/Phone_bg.svg" alt="icon" />
-                      <p>+7 (708) 911 38 54</p></a
-                    >
-                  </li>
-                  <li>
-                    <h6>Почта</h6>
-                    <a mail:info@saigak-orto.kz
-                      ><img src="./img/icon/Envelope.svg" alt="icon" />
-                      <p>info@saigak-orto.kz</p></a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="footer__item-wrap pg-contacts__item cont-3">
-                <div>
-                  <h6>Адрес</h6>
-                  <a href="https://maps.app.goo.gl/k7hEGbN6Zoa7bPBv5"
-                    ><img src="./img/icon/MapPin_big.svg" alt="icon" />
-                    <p>Алматы, Кажымукана 16/1</p></a
-                  >
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.259326762519!2d76.95563877671158!3d43.22502227112565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836f05ee68fa3d%3A0xac1b3262e7e0cc3c!2zMSwg0YPQu9C40YbQsCDQpdCw0LTQttC40LzRg9C60LDQvdCwIDE2LCDQkNC70LzQsNGC0YsgMDUwMDAwLCDQmtCw0LfQsNGF0YHRgtCw0L0!5e0!3m2!1sru!2sua!4v1710863825637!5m2!1sru!2sua"
-                    width="460"
-                    height="240"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                  ></iframe>
+            <li class="team__list__item section-item">
+              <a href="./page-team-singl.html">
+                <div class="img-wrap">
+                  <img
+                    class="team__img"
+                    src="./img/art-pust.jpg"
+                    alt="услуги"
+                  />
+                  <p class="pg-art-data">25.05.2023</p>
                 </div>
-              </div>
+                <div class="text-item-wrap">
+                  <h3 class="title-item">
+                    Поддерживающие корсеты. Когда и кому они нужны?
+                  </h3>
+                  <p class="text-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore
+                  </p>
+                  <a href="#" class="pg-art-read"><p>Читать далее</p></a>
+                </div>
+              </a>
+            </li>
+            <li class="team__list__item section-item">
+              <a href="./page-team-singl.html">
+                <div class="img-wrap">
+                  <img
+                    class="team__img"
+                    src="./img/art-pust.jpg"
+                    alt="услуги"
+                  />
+                  <p class="pg-art-data">25.05.2023</p>
+                </div>
+                <div class="text-item-wrap">
+                  <h3 class="title-item">
+                    Поддерживающие корсеты. Когда и кому они нужны?
+                  </h3>
+                  <p class="text-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore
+                  </p>
+                  <a href="#" class="pg-art-read"><p>Читать далее</p></a>
+                </div>
+              </a>
+            </li>
+            <li class="team__list__item section-item">
+              <a href="./page-team-singl.html">
+                <div class="img-wrap">
+                  <img
+                    class="team__img"
+                    src="./img/art-pust.jpg"
+                    alt="услуги"
+                  />
+                  <p class="pg-art-data">25.05.2023</p>
+                </div>
+                <div class="text-item-wrap">
+                  <h3 class="title-item">
+                    Поддерживающие корсеты. Когда и кому они нужны?
+                  </h3>
+                  <p class="text-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore
+                  </p>
+                  <a href="#" class="pg-art-read"><p>Читать далее</p></a>
+                </div>
+              </a>
+            </li>
+            <li class="team__list__item section-item">
+              <a href="./page-team-singl.html">
+                <div class="img-wrap">
+                  <img
+                    class="team__img"
+                    src="./img/art-pust.jpg"
+                    alt="услуги"
+                  />
+                  <p class="pg-art-data">25.05.2023</p>
+                </div>
+                <div class="text-item-wrap">
+                  <h3 class="title-item">
+                    Поддерживающие корсеты. Когда и кому они нужны?
+                  </h3>
+                  <p class="text-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore
+                  </p>
+                  <a href="#" class="pg-art-read"><p>Читать далее</p></a>
+                </div>
+              </a>
+            </li>
+            <li class="team__list__item section-item">
+              <a href="./page-team-singl.html">
+                <div class="img-wrap">
+                  <img
+                    class="team__img"
+                    src="./img/art-pust.jpg"
+                    alt="услуги"
+                  />
+                  <p class="pg-art-data">25.05.2023</p>
+                </div>
+                <div class="text-item-wrap">
+                  <h3 class="title-item">
+                    Поддерживающие корсеты. Когда и кому они нужны?
+                  </h3>
+                  <p class="text-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore
+                  </p>
+                  <a href="#" class="pg-art-read"><p>Читать далее</p></a>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -519,11 +473,3 @@
     <script type="module" src="./js/swiper.js"></script>
   </body>
 </html>
-
-<ul>
-  <li class="pg-contacts__wrap" id="Алматы"></li>
-
-  <li class="pg-contacts__wrap" id="Астана"></li>
-
-  <li class="pg-contacts__wrap" id="Атырау"></li>
-</ul>

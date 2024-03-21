@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>СайгакОрто</title>
+    <link rel="stylesheet" href="./fonts/stylesheet.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="header section">
+      <div class="container">
+        <div class="header__container row">
+          <div class="header__logo logo">
+            <a href="/"><img src="/img/logo.svg" alt="logo" /></a>
+          </div>
+          <nav class="header__menu">
+            <ul class="header__menu-list row">
+              <li><a href="/">Главная</a></li>
+              <li><a href="/page-about.html">О нас</a></li>
+              <li class="menu-item-1" id="menu-item-1">
+                <a href="#">Услуги</a>
+              </li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Специалисты</a></li>
+              <li><a href="#">Статьи</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+            <ul class="menu-serv is-hidden" id="menu-serv">
+              <li>
+                <a href="./page-serv-konsult.html">Консультации и осмотры</a>
+              </li>
+              <li><a href="./page-serv-shrot.html">Шрот терапия</a></li>
+              <li>
+                <a href="./page-serv-konech.html"
+                  >Аппарат на нижние конечности</a
+                >
+              </li>
+              <li><a href="./page-serv-sheno.html">Корсет Шено</a></li>
+              <li><a href="./page-serv-ortez.html">Ортезирование</a></li>
+              <li><a href="./page-serv-shlem.html">Ортопедический шлем</a></li>
+              <li>
+                <a href="./page-serv-kosolap.html">Лечение косолапости</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__tel row">
+            <a href="tel:+77089118447"
+              ><img src="./img/icon/Phone.svg" alt="icon" />+7 (708) 911 84
+              47</a
+            >
+          </div>
+          <div class="header-burger">
+            <img src="./img/icon/burger.svg" alt="меню" />
+          </div>
+        </div>
+      </div>
+      <div class="burger-menu">
+        <div class="mobile-menu-wrap">
+          <div class="mob-menu-leng-wr row">
+            <div class="header-bottom-leng leng-mob row">
+              <select class="select" name="language" aria-label="select">
+                <option value="UA" disabled selected>UA</option>
+                <!-- <option value="UA">UA</option> -->
+                <option value="RU">RU</option>
+                <option value="EN">EN</option>
+              </select>
+              <img class="btn-leng" src="img/icon/leng_icon.svg" alt="leng" />
+            </div>
+            <button class="button-x mobile-menu-close" type="button">
+              <img src="./img/icon/X.svg" alt="іконка" />
+            </button>
+          </div>
+          <nav class="mobile-menu">
+            <ul class="mobile-menu-list">
+              <li><a href="/">Главная</a></li>
+              <li>
+                <div class="" id="accordeon-menu-mob">
+                  <div class="row accm1-head">
+                    <a href="/page-generator.html">Продукти</a>
+                    <div>
+                      <button type="button" class="faq-img faq-open1">
+                        <img src="./img/icon/CaretDown_s.svg" alt="іконка" />
+                      </button>
+                      <button
+                        type="button"
+                        class="faq-img faq-closed1 is-hidden"
+                      >
+                        <img src="./img/icon/CaretUp.svg" alt="іконка" />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="accm1-body column is-hidden">
+                    <div class="marg column">
+                      <a href="/page-generator.html">Генератори</a>
+                      <a href="/page-generator.html">Запчастини</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="" id="accordeon-menu-mob2">
+                  <div class="row accm2-head">
+                    <a href="/page-generator.html">Послуги</a>
+                    <div>
+                      <button type="button" class="faq-img faq-open1">
+                        <img src="./img/icon/CaretDown_s.svg" alt="іконка" />
+                      </button>
+                      <button
+                        type="button"
+                        class="faq-img faq-closed1 is-hidden"
+                      >
+                        <img src="./img/icon/CaretUp.svg" alt="іконка" />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="accm2-body column is-hidden">
+                    <div class="marg column">
+                      <a href="/page-generator.html"
+                        >Будівництво сонячних станцій</a
+                      >
+                      <a href="/page-generator.html">Електромонтажні роботи</a>
+                      <a href="/page-generator.html">Сервісне обслуговування</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><a href="/page-about.html">Про нас</a></li>
+              <li><a href="/page-obj.html">Об'єкти</a></li>
+              <li><a href="/page-blog.html">Блог</a></li>
+              <li><a href="/page-reviews.html">Відгуки</a></li>
+            </ul>
+          </nav>
+          <button class="menu-btn-1 btn popup-open" type="button">
+            Залишити заявку
+          </button>
+          <ul class="footer-list-cont menu-mob-list-cont footer-list">
+            <li>
+              <a href="#"
+                ><img src="./img/icon/Phoneb.svg" alt="icon" />+38 (063) 292 48
+                06</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./img/icon/Envelopeb.svg"
+                  alt="icon"
+                />info@profenergy.com.ua</a
+              >
+            </li>
+            <li>
+              <a href="https://maps.app.goo.gl/vb2EwiMuiRdBmJtP9"
+                ><img src="./img/icon/MapPinb.svg" alt="icon" />Україна, 49112,
+                Днiпропетровська обл., мiсто Днiпро, ВУЛИЦЯ ЕЛЕКТРИЧНА, будинок
+                2</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="reviews-bg">
+      <div class="breadcrumbs container">
+        <ul>
+          <li>Главная</li>
+          <li>/</li>
+          <li>Отзывы</li>
+        </ul>
+      </div>
+
+      <section class="p-reviews">
+        <div class="container container-r">
+          <div class="p-reviews__wrap">
+            <h1>Мы слышим наших клиентов!</h1>
+            <p class="p-reviews__text">
+              Наша клиника ценит прозрачность отзывов и открыто приглашает вас
+              оставить свой отзыв. Вы также можете просмотреть отзывы других
+              клиентов, чтобы удостовериться в профессионализме наших
+              специалистов. Спасибо вам за выбор Сайгак Орто и вашу поддержку.
+            </p>
+          </div>
+          <div class="p-reviews__rating-wrap row">
+            <div class="p-reviews__wrap-item">
+              <h5>Всего отзывов</h5>
+              <p class="p-reviews__rating">20+</p>
+              <p class="p-reviews__deckr">За все время</p>
+            </div>
+            <div class="p-reviews-line"></div>
+            <div class="p-reviews__wrap-item">
+              <h5>Общий рейтинг</h5>
+              <p class="p-reviews__rating">5/5</p>
+              <p class="p-reviews__deckr">За 5+ лет</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-reviews-2s section">
+        <div class="p-reviews-2s__wrap p-obj-btn-wrap row">
+          <div class="p-reviews-2s__btn">
+            <button class="p-reviews-btn btn active">Отзывы</button>
+            <button class="p-reviews-btn btn">Видео отзывы</button>
+          </div>
+          <div>
+            <ul class="p-reviews-2s__list row">
+              <li><p>Сортировать по:</p></li>
+              <li>
+                <input
+                  id="rev-fl-id-1 "
+                  type="checkbox"
+                  class="custom-checkbox"
+                />
+                <label for="rev-fl-id-1"><span></span>Дате</label>
+              </li>
+              <li>
+                <input
+                  id="rev-fl-id-2 "
+                  type="checkbox"
+                  class="custom-checkbox"
+                />
+                <label for="rev-fl-id-2"><span></span>Рейтингу</label>
+              </li>
+            </ul>
+          </div>
+          <button class="p-reviews-btn-2 btn">Оставить отзыв</button>
+        </div>
+        <ul class="p-reviews-3s">
+          <li class="p-reviews-3s__item row">
+            <div class="p-reviews-3s__1p">
+              <div class="avatar">M</div>
+              <div class="name-cont">
+                <h4 class="p-reviews-3s__name">Марина Муракаева</h4>
+                <p>25.05.2023</p>
+              </div>
+            </div>
+            <div class="p-reviews-3s__item-2p">
+              <div class="p-reviews-3s__star">
+                <img src="./img/stars.svg" alt="" />
+              </div>
+              <p class="text-item">
+                Здесь действительно помогают! Лечим здесь сколиоз ребёнку, у нас
+                очень хороший результат. Доктор Сергей Вадимович очень чуткий и
+                внимательный.
+              </p>
+            </div>
+          </li>
+          <li class="p-reviews-3s__item row">
+            <div class="p-reviews-3s__1p">
+              <div class="avatar">M</div>
+              <div class="name-cont">
+                <h4 class="p-reviews-3s__name">Марина Муракаева</h4>
+                <p>25.05.2023</p>
+              </div>
+            </div>
+            <div class="p-reviews-3s__item-2p">
+              <div class="p-reviews-3s__star">
+                <img src="./img/stars.svg" alt="" />
+              </div>
+              <p class="text-item">
+                Здесь действительно помогают! Лечим здесь сколиоз ребёнку, у нас
+                очень хороший результат. Доктор Сергей Вадимович очень чуткий и
+                внимательный.
+              </p>
+            </div>
+          </li>
+          <li class="p-reviews-3s__item row">
+            <div class="p-reviews-3s__1p">
+              <div class="avatar">M</div>
+              <div class="name-cont">
+                <h4 class="p-reviews-3s__name">Марина Муракаева</h4>
+                <p>25.05.2023</p>
+              </div>
+            </div>
+            <div class="p-reviews-3s__item-2p">
+              <div class="p-reviews-3s__star">
+                <img src="./img/stars.svg" alt="" />
+              </div>
+              <p class="text-item">
+                Здесь действительно помогают! Лечим здесь сколиоз ребёнку, у нас
+                очень хороший результат. Доктор Сергей Вадимович очень чуткий и
+                внимательный.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <div class="about-s-line p-reviews-line"></div>
+    </main>
+    <footer class="footer">
+      <div class="container row">
+        <div class="footer__item-wrap footer-one">
+          <div class="footer__logo logo">
+            <a href="/"><img src="/img/logo.svg" alt="logo" /></a>
+          </div>
+          <h6>График работы</h6>
+          <ul>
+            <li><span>Пн - Вс |</span> 9:00-19:00</li>
+            <li><span>Суббота |</span> 10:00-16:00</li>
+            <li><span>Воскресенье |</span> Выходной</li>
+          </ul>
+        </div>
+        <div class="footer__item-wrap footer-two">
+          <h6>Услуги</h6>
+          <ul>
+            <li><a href="#">Корсет Шено</a></li>
+            <li><a href="#">Ортезирование</a></li>
+            <li><a href="#">Ортопедический шлем</a></li>
+            <li><a href="#">Аппарат на нижние конечности и туловище</a></li>
+            <li><a href="#">Шрот терапия</a></li>
+            <li><a href="#">Консультации и осмотры</a></li>
+            <li><a href="#">Лечение косолапости</a></li>
+          </ul>
+        </div>
+        <div class="footer__item-wrap footer-three">
+          <h6>Соц. сети</h6>
+          <ul>
+            <li>
+              <a href="#"
+                ><img src="./img/icon/FacebookLogo.svg" alt="icon" />
+                <p>Facebook</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./img/icon/InstagramLogo.svg" alt="icon" />
+                <p>Instagram</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./img/icon/YoutubeLogo.svg" alt="icon" />
+                <p>Youtube</p></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item-wrap footer-fore">
+          <h6>Контакты</h6>
+          <ul>
+            <li>
+              <a href="https://maps.app.goo.gl/k7hEGbN6Zoa7bPBv5"
+                ><img src="./img/icon/MapPin_big.svg" alt="icon" />
+                <p>Алматы, Кажымукана 16/1</p></a
+              >
+            </li>
+            <li>
+              <a tel:+77089113854
+                ><img src="./img/icon/Phone_bg.svg" alt="icon" />
+                <p>+7 (708) 911 38 54</p></a
+              >
+            </li>
+            <li>
+              <a mail:info@saigak-orto.kz
+                ><img src="./img/icon/Envelope.svg" alt="icon" />
+                <p>info@saigak-orto.kz</p></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copy">
+        <p>© 2024 Ортопедический центр Алматы | Все права защищены</p>
+      </div>
+    </footer>
+    <div class="backdrop popup-fade2">
+      <section class="popup-gen popup2 form-s">
+        <div class="form-reviews-container">
+          <button class="button-x popup-close2" type="button">
+            <img
+              src="<?php echo bloginfo('template_url'); ?>/assets/img/icon/X.svg"
+              alt="іконка"
+            />
+          </button>
+          <h2 class="form-s-title section-title">
+            Розкажіть ваші враження від співпраці з нами
+          </h2>
+          <div class="form-reviews">
+            <form id="add_review" enctype="multipart/form-data">
+              <div class="rating__group">
+                <input
+                  class="rating__star"
+                  type="radio"
+                  name="rating"
+                  value="1"
+                  aria-label="Ужасно"
+                />
+                <input
+                  class="rating__star"
+                  type="radio"
+                  name="rating"
+                  value="2"
+                  aria-label="Сносно"
+                />
+                <input
+                  class="rating__star"
+                  type="radio"
+                  name="rating"
+                  value="3"
+                  aria-label="Нормально"
+                />
+                <input
+                  class="rating__star"
+                  type="radio"
+                  name="rating"
+                  value="4"
+                  aria-label="Хорошо"
+                />
+                <input
+                  class="rating__star"
+                  type="radio"
+                  name="rating"
+                  value="5"
+                  aria-label="Отлично"
+                  checked
+                />
+              </div>
+              <input
+                type="text"
+                name="name"
+                class="rev-inp"
+                placeholder="Ім'я"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                class="rev-inp"
+                placeholder="Email"
+              />
+              <input
+                type="tel"
+                name="tel"
+                class="rev-inp"
+                placeholder="Номер телефону*"
+              />
+              <!-- <input type="file" name="review_image_1" multiple="multiple"> -->
+              <textarea name="message" placeholder="Відгук" required></textarea>
+              <!-- <input type="submit" name="submit"> -->
+              <div id="fileInputs">
+                <!-- <input type="file" name="review_image_1"> -->
+              </div>
+              <!-- <button type="button" id="addFileInput">Добавить еще файл</button> -->
+              <button class="paperclip btn row" id="addFileInput" type="button">
+                <img
+                  src="<?php echo bloginfo('template_url'); ?>/assets/img/icon/Paperclip.svg"
+                  alt="btn"
+                />Додати фото або відео
+              </button>
+              <h4>Що сподобалось вам найбільше?</h4>
+              <div>
+                <ul class="form-reviews-list-check p-gen-filter-text-list row">
+                  <li class="p-gen-filter-text-item">
+                    <input
+                      id="rev-fl-id-1"
+                      name="check1"
+                      type="checkbox"
+                      class="custom-checkbox"
+                    />
+                    <label for="rev-fl-id-1">Професіоналізм</label>
+                  </li>
+                  <li class="p-gen-filter-text-item">
+                    <input
+                      id="rev-fl-id-1 "
+                      name="check2"
+                      type="checkbox"
+                      class="custom-checkbox"
+                    />
+                    <label for="rev-fl-id-1">Якість роботи</label>
+                  </li>
+                  <li class="p-gen-filter-text-item">
+                    <input
+                      id="rev-fl-id-1 "
+                      name="check3"
+                      type="checkbox"
+                      class="custom-checkbox"
+                    />
+                    <label for="rev-fl-id-1">Швидкість виконання</label>
+                  </li>
+                  <li class="p-gen-filter-text-item">
+                    <input
+                      id="rev-fl-id-1 "
+                      name="check4"
+                      type="checkbox"
+                      class="custom-checkbox"
+                    />
+                    <label for="rev-fl-id-1">Інноваційні рішення</label>
+                  </li>
+                  <li class="p-gen-filter-text-item">
+                    <input
+                      id="rev-fl-id-1 "
+                      name="check5"
+                      type="checkbox"
+                      class="custom-checkbox"
+                    />
+                    <label for="rev-fl-id-1">Гнучкість</label>
+                  </li>
+                  <li class="p-gen-filter-text-item">
+                    <input
+                      id="rev-fl-id-1 "
+                      name="check6"
+                      type="checkbox"
+                      class="custom-checkbox"
+                    />
+                    <label for="rev-fl-id-1"
+                      >Підтримка після закінчення проєкту</label
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="form-reviews-btn-wrap row">
+                <button
+                  class="form-reviews-btn-1b"
+                  id="form-reviews-btn-1b"
+                  name="reset"
+                  type="reset"
+                >
+                  Скасувати
+                </button>
+                <button
+                  class="form-reviews-btn-2b btn"
+                  name="submit"
+                  type="submit"
+                >
+                  Залишити відгук
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./js/script.js"></script>
+    <script type="module" src="./js/swiper.js"></script>
+  </body>
+</html>

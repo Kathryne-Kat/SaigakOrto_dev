@@ -123,3 +123,107 @@ refs2.openServ.addEventListener("mouseleave", () => {
       $(this).addClass('active');
     });
   });
+
+
+  //  $(document).ready(function(){
+  //   $('.select').change(function(){
+  //     var selectedValue = $(this).val();
+  //     $('.pg-contacts__wrap').addClass('hidden');
+  //     if (selectedValue === 'all') {
+  //       $('.pg-contacts__wrap').removeClass('hidden');
+  //     } else {
+  //       $('#' + selectedValue).removeClass('hidden');
+  //     }
+  //   });
+  // });
+// document.addEventListener('DOMContentLoaded', function() {
+//     var selectElement = document.querySelector('.select');
+//     var listItems = document.querySelectorAll('.pg-contacts__wrap');
+
+//     selectElement.addEventListener('change', function() {
+//       var selectedValue = this.value;
+
+//       listItems.forEach(function(item) {
+//         if (selectedValue === 'all' || item.id === selectedValue) {
+//           item.style.display = 'block';
+//         } else {
+//           item.style.display = 'none';
+//         }
+//       });
+//     });
+//   });
+  // // Ждем, пока весь документ загрузится
+  // $(document).ready(function(){
+  //   // Назначаем обработчик события change на элемент select
+  //   $('.select').change(function(){
+  //     // Получаем выбранное значение
+  //     var selectedValue = $(this).val();
+  //     // Скрываем все элементы списка ul
+  //     $('.pg-contacts__wrap').addClass('hidden');
+  //     // Если выбрано значение "all", то показываем все элементы списка ul
+  //     if (selectedValue === 'all') {
+  //       $('.pg-contacts__wrap').removeClass('hidden');
+  //     } else {
+  //       // Иначе показываем только элемент списка ul с id, соответствующим выбранному значению
+  //       $('#' + selectedValue).removeClass('hidden');
+  //     }
+  //   });
+// });
+  
+//   $(document).ready(function(){
+//     $('.select-2').change(function(){
+//       var selectedValue = $(this).val();
+//       $('.pg-contacts__wrap').addClass('hidden');
+//       if (selectedValue === 'all') {
+//         $('.pg-contacts__wrap').removeClass('hidden');
+//       } else {
+//         $('#' + selectedValue).removeClass('hidden');
+//       }
+//     });
+// });
+  
+ $(document).ready(function(){
+    // При клике на кастомный выпадающий список показываем/скрываем опции и переворачиваем каретку
+    $('.custom-dropdown').click(function() {
+      $(this).toggleClass('active').siblings('.custom-dropdown-list').toggleClass('active');
+    });
+
+    // При клике на опцию обновляем значение кастомного списка и скрываем опции
+    $('.custom-dropdown-list li').click(function() {
+      var value = $(this).attr('data-value');
+      var text = $(this).text();
+      $('.custom-dropdown').text(text).removeClass('active');
+      $('.custom-dropdown-list').removeClass('active');
+      // Фильтрация контента по выбору из списка
+      var selectedValue = $(this).attr('data-value');
+      $('.select-city').addClass('hidden');
+      if (selectedValue === 'all') {
+        $('.select-city').removeClass('hidden');
+      } else {
+        $('#' + selectedValue).removeClass('hidden');
+      }
+    });
+ });
+  
+  // $(document).ready(function(){
+  //   // При клике на кастомный выпадающий список показываем/скрываем опции и переворачиваем каретку
+  //   $('.custom-dropdown').click(function() {
+  //     $(this).toggleClass('active').siblings('.custom-dropdown-list').toggleClass('active');
+  //   });
+
+  //   // При клике на опцию обновляем значение кастомного списка и скрываем опции
+  //   $('.custom-dropdown-list li').click(function() {
+  //     var value = $(this).attr('data-value');
+  //     var text = $(this).text();
+  //     $('.custom-dropdown').text(text).removeClass('active');
+  //     $('.custom-dropdown-list').removeClass('active');
+  //     // Фильтрация контента по выбору из списка
+  //     var selectedValue = $(this).attr('data-value');
+  //     $('.team__list__item').addClass('hidden');
+  //     if (selectedValue === 'all') {
+  //       $('.team__list__item').removeClass('hidden');
+  //     } else {
+  //       $('#' + selectedValue).removeClass('hidden');
+  //     }
+  //   });
+  // });

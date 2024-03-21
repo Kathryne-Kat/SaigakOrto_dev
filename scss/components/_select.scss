@@ -12,8 +12,8 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-
-  background: $accent-color-2;
+  background: rgb(229, 247, 247);
+  // background: $accent-color-2;
 }
 
 .new-select {
@@ -107,4 +107,113 @@
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
+}
+
+.custom-dropdown-container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+/* Стилизация кастомного выпадающего списка */
+.pg-contacts-hero {
+  & .container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+.custom-dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-dropdown {
+  // position: relative;
+  background-color: rgb(229, 247, 247);
+  font-family: "Mulish";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: $accent-color;
+  cursor: pointer;
+  padding: 10px 35px 10px 35px; /* Добавляем отступ справа для значка */
+  // background-image: url("/img/icon/MapPin.svg"); /* Добавляем значок */
+  // background-repeat: no-repeat;
+  // background-position: left center;
+  // background-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.custom-dropdown::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 10px; /* Выравниваем значок по правому краю */
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../img/icon/MapPin.svg"); /* Добавляем значок */
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 16px;
+}
+.custom-dropdown::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  right: 10px; /* Выравниваем значок по правому краю */
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../img/icon/CaretDown.svg"); /* Добавляем значок */
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 20px;
+}
+
+.custom-dropdown.active::after {
+  right: 5px;
+  transform: translateY(-50%) rotate(180deg); /* Переворачиваем значок */
+}
+
+.custom-dropdown-list {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 50%;
+  transform: translateX(-50%);
+  color: $accent-color;
+  // background-color: rgb(229, 247, 247);
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  display: none;
+  z-index: 100;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  width: max-content;
+}
+
+.custom-dropdown-list.active {
+  display: block;
+}
+
+.custom-dropdown-list li {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.custom-dropdown-list li:hover {
+  background-color: #f8f9fa;
+}
+
+/* Скрытие и отображение элементов контента */
+.pg-contacts__wrap.hidden {
+  display: none;
 }

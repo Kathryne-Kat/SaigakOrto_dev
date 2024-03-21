@@ -1,13 +1,14 @@
 const swiper1 = new Swiper(".swiper-services", {
-    spaceBetween: 20, 
+    spaceBetween: 10, 
     loop: true, 
     rewind: true,  
-    speed: 1000,  
-  initialSlide: 3,
-     
-    // autoplay: {       
-    //     delay: 3000,
-    // },
+    speed: 3000,   
+  initialSlide: 3,     
+  autoplay: {       
+      delay:1000,
+      // delay: 0,
+      // disableOnInteraction: false
+    },
     effect: 'coverflow',
     grabCursor: true,
     centeredSlides: true,
@@ -29,11 +30,10 @@ const swiper1 = new Swiper(".swiper-services", {
         clickable:true,
   },
 });
-
 const swiper2 = new Swiper(".swiper-reviews", {
   loop: true, 
   rewind: true,
-	speed: 500,
+	speed: 2000,
 	grabCursor: true,
 	slidesPerView: "auto",
 	spaceBetween: 24,
@@ -49,4 +49,15 @@ const swiper2 = new Swiper(".swiper-reviews", {
   //       el: '.swiper-pagination-serv',
   //       clickable:true,
   // },
+});
+
+$(document).ready(function(){
+  $('.slick-serv').slick({
+   centerMode: true,
+  centerPadding: '100px',
+  slidesToShow: 5,
+  slideToScroll: 1,
+  infinite: true,
+  variableWidth: true
+  });
 });
