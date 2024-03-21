@@ -1,5 +1,5 @@
 .pg-sheno-hero-wrap {
-  background: url(/img/pg-serv-hero.jpg);
+  background: url(../img/pg-serv-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 352px;
@@ -49,7 +49,7 @@
         color: $primary-color;
         padding-left: 47px;
         &::before {
-          content: url(/img/icon/Star_1.svg);
+          content: url(../img/icon/Star_1.svg);
           position: absolute;
           top: 16px;
           left: 8px;
@@ -121,7 +121,8 @@
         }
         &::before {
           content: "";
-          background: url("/img/icon/Checks-sheno.svg") center center no-repeat;
+          background: url("../img/icon/Checks-sheno.svg") center center
+            no-repeat;
           width: 22px;
           height: 26px;
           position: absolute;

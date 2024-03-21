@@ -1238,7 +1238,7 @@ main.about::after {
 }
 
 main.team {
-  background: url(/img/team-bg-1.svg), url(/img/team-bg-2.svg);
+  background: url(../img/team-bg-1.svg), url(../img/team-bg-2.svg);
   background-position: 0 50px, 100% -30px;
   background-repeat: no-repeat;
 }
@@ -1281,7 +1281,7 @@ main.team {
 }
 
 .pg-sheno-hero-wrap {
-  background: url(/img/pg-serv-hero.jpg);
+  background: url(../img/pg-serv-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 352px;
@@ -1335,7 +1335,7 @@ main.team {
   padding-left: 47px;
 }
 .pg-sheno-content__menu li.active::before {
-  content: url(/img/icon/Star_1.svg);
+  content: url(../img/icon/Star_1.svg);
   position: absolute;
   top: 16px;
   left: 8px;
@@ -1404,7 +1404,7 @@ main.team {
 }
 .pg-sheno-content__item ul li::before {
   content: "";
-  background: url("/img/icon/Checks-sheno.svg") center center no-repeat;
+  background: url("../img/icon/Checks-sheno.svg") center center no-repeat;
   width: 22px;
   height: 26px;
   position: absolute;
@@ -1421,7 +1421,7 @@ main.team {
 }
 
 .pg-ortez-hero-wrap {
-  background: url(/img/pg-serv-ortez-hero.jpg);
+  background: url(../img/pg-serv-ortez-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 352px;
@@ -1533,7 +1533,7 @@ main.team {
 }
 
 .pg-shlem-hero-wrap {
-  background: url(/img/pg-serv-shlem-hero.jpg);
+  background: url(../img/pg-serv-shlem-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 352px;
@@ -1572,7 +1572,7 @@ main.team {
 }
 
 .pg-konech-hero-wrap {
-  background: url(/img/pg-serv-konech-hero.jpg);
+  background: url(../img/pg-serv-konech-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 352px;
@@ -1605,7 +1605,7 @@ main.team {
 }
 
 .pg-shrot-hero-wrap {
-  background: url(/img/pg-serv-hero.jpg);
+  background: url(../img/pg-serv-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 352px;
@@ -1670,7 +1670,7 @@ main.team {
 }
 
 .pg-kosolap-hero-wrap {
-  background: url(/img/pg-serv-shlem-hero.jpg);
+  background: url(../img/pg-serv-shlem-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 352px;
@@ -1750,7 +1750,7 @@ main.team {
 }
 
 .pg-konech-hero-wrap {
-  background: url(/img/pg-serv-konech-hero.jpg);
+  background: url(../img/pg-serv-konech-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 352px;
@@ -1834,7 +1834,7 @@ main.team {
 }
 .pg-team-s__content ul li::before {
   content: "";
-  background: url("/img/icon/Checks-sheno.svg") center center no-repeat;
+  background: url("../img/icon/Checks-sheno.svg") center center no-repeat;
   background-repeat: no-repeat;
   width: 22px;
   height: 26px;
@@ -1882,7 +1882,7 @@ main.team {
   vertical-align: middle;
 }
 .pg-team-s__content.content-2 ul li::before {
-  background: url("/img/icon/CheckCircle.svg") center center no-repeat;
+  background: url("../img/icon/CheckCircle.svg") center center no-repeat;
 }
 .pg-team-s__content.content-2 ul li p {
   display: inline-block;
@@ -1894,7 +1894,7 @@ main.team {
 }
 
 .pg-art-hero {
-  background: url("/img/articals-hero.png") no-repeat;
+  background: url("../img/articals-hero.png") no-repeat;
   height: 28vw;
   width: 100%;
   background-size: 100%;
@@ -1932,7 +1932,7 @@ main.team {
   color: #2c2c2c;
 }
 .pg-arts__list li .pg-art-data::before {
-  content: url(/img/icon/CalendarBlank.svg);
+  content: url("../img/icon/CalendarBlank.svg");
   width: 20px;
   height: 20px;
 }
@@ -1961,7 +1961,7 @@ main.team {
   margin-bottom: 0;
 }
 .pg-arts__list li .pg-art-read p::after {
-  content: url("/img/icon/ArrowRight.svg");
+  content: url("../img/icon/ArrowRight.svg");
   width: 20px;
   height: 20px;
 }
@@ -2174,7 +2174,7 @@ main.team {
   content: "";
   border-color: #ffd28b;
   background-color: #ffd28b;
-  background-image: url("/img/icon/Vector.svg");
+  background-image: url("../img/icon/Vector.svg");
 }
 
 .p-reviews-3s {

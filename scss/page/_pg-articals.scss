@@ -1,5 +1,5 @@
 .pg-art-hero {
-  background: url("/img/articals-hero.png") no-repeat;
+  background: url("../img/articals-hero.png") no-repeat;
   height: 28vw;
   width: 100%;
   background-size: 100%;
@@ -35,7 +35,7 @@
         text-align: center;
         color: #2c2c2c;
         &::before {
-          content: url(/img/icon/CalendarBlank.svg);
+          content: url("../img/icon/CalendarBlank.svg");
           width: 20px;
           height: 20px;
         }
@@ -63,7 +63,7 @@
           margin-top: 0;
           margin-bottom: 0;
           &::after {
-            content: url("/img/icon/ArrowRight.svg");
+            content: url("../img/icon/ArrowRight.svg");
             width: 20px;
             height: 20px;
             // content: "";
