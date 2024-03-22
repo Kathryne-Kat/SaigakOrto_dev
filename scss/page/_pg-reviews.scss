@@ -1,3 +1,9 @@
+main.reviews-bg {
+  background: url(../img/icon/bg2.svg), url(../img/icon/bg1.svg);
+  background-position: 0 200px, 100% 30px;
+  background-repeat: no-repeat;
+}
+
 /*-------------------REVIEWS----------------*/
 .container-r {
   max-width: 1000px;
@@ -34,6 +40,7 @@
   &__rating-wrap {
     justify-content: center;
     gap: 36px;
+    align-items: start;
   }
   &__rating {
     font-weight: 600;
@@ -47,6 +54,9 @@
     font-size: 14px;
     color: #707070;
     // text-align: center;
+    &:last-child {
+      margin-top: 0;
+    }
   }
   &__wrap-item {
     & h5 {
@@ -55,12 +65,59 @@
       margin-top: 0;
       margin-bottom: 0;
     }
+    & .row {
+      align-items: end;
+    }
   }
 }
 
 .p-reviews-line {
   border-right: 1px solid #eaeaea;
   height: 150px;
+}
+
+.p-reviews-count {
+  & .row {
+    align-items: center;
+    gap: 12px;
+    margin-top: 0;
+    margin-bottom: 12px;
+    width: max-content;
+    & .st {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+  & .str {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    &::before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      background: url(/img/icon/Star.svg) no-repeat;
+      background-size: 20px;
+      margin-right: 4px;
+    }
+  }
+
+  & .slider-container {
+    width: max-content;
+    height: 6px;
+    background-color: #ddd;
+    text-align: left;
+    // margin-top: 50px;
+  }
+
+  & .slider {
+    width: 0;
+    height: 100%;
+    background-color: $accent-color;
+    transition: width 0.5s ease;
+    border-radius: 46px;
+    text-align: left;
+  }
 }
 
 .p-reviews-2s {
@@ -162,7 +219,7 @@
   margin-left: auto;
   margin-right: auto;
   &__item {
-    margin-top: 56px;
+    margin-top: 36px;
     justify-content: center;
     align-items: start;
     gap: 80px;

@@ -519,6 +519,48 @@ body a {
   font-weight: 700;
 }
 
+.pagination {
+  text-align: center;
+}
+
+.pagination-list {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.pagination-item {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.pagination-link {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-item.active .pagination-link {
+  background-color: #00a5a5;
+  color: #fff;
+}
+
+.arrow a {
+  font-size: 30px;
+}
+
 /*-------------------HEADER----------------*/
 .header {
   margin-top: 20px;
@@ -2019,6 +2061,12 @@ main.team {
   margin-top: 24px;
 }
 
+main.reviews-bg {
+  background: url(../img/icon/bg2.svg), url(../img/icon/bg1.svg);
+  background-position: 0 200px, 100% 30px;
+  background-repeat: no-repeat;
+}
+
 /*-------------------REVIEWS----------------*/
 .container-r {
   max-width: 1000px;
@@ -2058,6 +2106,7 @@ main.team {
 .p-reviews__rating-wrap {
   justify-content: center;
   gap: 36px;
+  align-items: start;
 }
 .p-reviews__rating {
   font-weight: 600;
@@ -2070,16 +2119,63 @@ main.team {
   font-size: 14px;
   color: #707070;
 }
+.p-reviews__deckr:last-child {
+  margin-top: 0;
+}
 .p-reviews__wrap-item h5 {
   font-weight: 600;
   font-size: 16px;
   margin-top: 0;
   margin-bottom: 0;
 }
+.p-reviews__wrap-item .row {
+  align-items: end;
+}
 
 .p-reviews-line {
   border-right: 1px solid #eaeaea;
   height: 150px;
+}
+
+.p-reviews-count .row {
+  align-items: center;
+  gap: 12px;
+  margin-top: 0;
+  margin-bottom: 12px;
+  width: -moz-max-content;
+  width: max-content;
+}
+.p-reviews-count .row .st {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.p-reviews-count .str {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.p-reviews-count .str::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(/img/icon/Star.svg) no-repeat;
+  background-size: 20px;
+  margin-right: 4px;
+}
+.p-reviews-count .slider-container {
+  width: -moz-max-content;
+  width: max-content;
+  height: 6px;
+  background-color: #ddd;
+  text-align: left;
+}
+.p-reviews-count .slider {
+  width: 0;
+  height: 100%;
+  background-color: #00a5a5;
+  transition: width 0.5s ease;
+  border-radius: 46px;
+  text-align: left;
 }
 
 .p-reviews-2s {
@@ -2184,7 +2280,7 @@ main.team {
   margin-right: auto;
 }
 .p-reviews-3s__item {
-  margin-top: 56px;
+  margin-top: 36px;
   justify-content: center;
   align-items: start;
   gap: 80px;
