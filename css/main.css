@@ -2177,6 +2177,18 @@ main.reviews-bg {
   border-radius: 46px;
   text-align: left;
 }
+.p-reviews-count .slider.fore-str {
+  background-color: #ffc263;
+}
+.p-reviews-count .slider.three-str {
+  background-color: #f57e47;
+}
+.p-reviews-count .slider.two-str {
+  background-color: #f7724a;
+}
+.p-reviews-count .slider.one-str {
+  background-color: #f85353;
+}
 
 .p-reviews-2s {
   max-width: 1240px;
