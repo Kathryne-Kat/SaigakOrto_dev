@@ -8,6 +8,12 @@
   margin-right: auto;
   margin-top: 30px;
   margin-bottom: 16px;
+  @media screen and (max-width: 1024px) {
+    object-fit: contain;
+  }
+}
+.stages-icon-one {
+  width: 100%;
 }
 .stages-icon-two {
   margin-top: 20px;
@@ -15,6 +21,12 @@
 }
 .stages__list {
   gap: 35px;
+  flex-wrap: nowrap;
+  @media screen and (max-width: 768px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .stages__item {
   & img {
@@ -23,9 +35,15 @@
     height: 220px;
     object-fit: cover;
     border-radius: 16px 16px 0px 0px;
+    @media screen and (max-width: 768px) {
+      border-radius: 16px;
+    }
   }
   & .stages__item-wrap {
     padding: 24px;
+    @media screen and (max-width: 768px) {
+      padding: 6px 0;
+    }
   }
   & .stages__item-step {
     color: rgb(0, 165, 165);
@@ -37,5 +55,51 @@
   }
   & .stages__item-title {
     margin-bottom: 4px;
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    padding: 20px 16px;
+    max-width: 430px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #f8f8f8;
+    border-radius: 10px;
+    margin-bottom: 16px;
+  }
+}
+
+.faq-img {
+  background: transparent;
+  border: none;
+  & img {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+}
+
+.stages-mob-header {
+  // border-radius: 10px;
+  // // padding: 20px 16px;
+  // background: #f8f8f8;
+}
+.add-bg {
+  border: 1px solid $accent-color;
+  background: transparent;
+}
+
+.st-list-mob {
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+}
+.st-list-deck {
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 }

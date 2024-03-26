@@ -1,12 +1,21 @@
 .team__list {
   gap: 16px;
   align-items: stretch;
+  @media screen and (max-width: 768px) {
+    gap: 0;
+  }
 
   &__item {
     width: 24%;
+    @media screen and (max-width: 768px) {
+      width: 70%;
+    }
+    @media screen and (max-width: 480px) {
+      width: 100%;
+    }
 
     & .img-wrap {
-      max-width: 320px;
+      // max-width: 320px;
       width: 100%;
       height: 210px;
     }
@@ -22,9 +31,26 @@
       font-weight: 700;
       line-height: 150%;
     }
+    @media screen and (max-width: 1024px) {
+      flex-basis: calc(50% - 10px);
+    }
+    @media screen and (max-width: 768px) {
+      flex-basis: 60%;
+      width: 60%;
+    }
+    @media screen and (max-width: 480px) {
+      flex-basis: 100%;
+      width: 100%;
+    }
   }
   & .text-item-wrap {
     padding: 24px 16px;
+  }
+  @media screen and (max-width: 1024px) {
+    flex-wrap: wrap;
+  }
+  @media screen and (max-width: 768px) {
+    flex-wrap: nowrap;
   }
 }
 .team__city {
@@ -42,4 +68,39 @@
     font-weight: 600;
     line-height: 20px;
   }
+}
+.swiper-team.team-list-mob {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .team-list-deck {
+    display: none;
+  }
+  .swiper-team.team-list-mob {
+    display: block;
+  }
+}
+
+.swiper-team .swiper-pagination-team {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.swiper-team .swiper-pagination-team {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+  text-align: center;
+}
+.swiper-pagination-team .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #b3b1b1;
+  color: #ddd;
+}
+.swiper-pagination-team .swiper-pagination-bullet-active {
+  width: 13px;
+  height: 13px;
+  background: $accent-color;
+  color: #ddd;
 }

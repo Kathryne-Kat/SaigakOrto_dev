@@ -14,6 +14,9 @@
     font-weight: 600;
     margin-bottom: 10px;
   }
+  @media screen and (max-width: 1366px) {
+    padding-left: 20px;
+  }
 }
 .reviews-container {
   width: 100%;
@@ -25,6 +28,19 @@
   );
   border-radius: 32px 0px 0px 32px;
   padding: 50px 0 50px 60px;
+  @media screen and (max-width: 768px) {
+    border-radius: 12px 0 0 12px;
+    // margin-right: 20px;
+    padding: 24px 0 24px 20px;
+    // width: 340px;
+    height: max-content;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 240, 207, 1) 97%,
+      rgba(255, 255, 255, 1) 10%
+    );
+    margin-bottom: 100px;
+  }
 }
 .reviews__list {
   // position: absolute;
@@ -36,9 +52,16 @@
     padding: 36px;
     border-radius: 14px;
     box-shadow: 0 0 30px 0 rgba(25, 22, 15, 0.08);
-    background: var(--primary-color);
+    background: $primary-color;
     & .data {
       margin: 0;
+    }
+    @media screen and (max-width: 768px) {
+      border-radius: 14px;
+      padding: 16px;
+      width: 310px;
+      // height: 215px;
+      box-shadow: 0 0 61px 0 rgba(32, 27, 19, 0.08);
     }
   }
 }
@@ -46,10 +69,21 @@
   width: 100%;
   height: 230px;
   padding: 30px;
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
 }
 .reviews__list__item.swiper-slide {
+  background: $primary-color;
   width: 555px;
-  height: 210px;
+  // height: 210px;
+  @media screen and (max-width: 768px) {
+    border-radius: 14px;
+    padding: 16px;
+    width: 310px;
+    // height: 215px;
+    box-shadow: none;
+  }
 }
 .swiper.swiper-reviews {
   width: 100%;
@@ -71,11 +105,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   // & img {
   //   width: 8px;
   //   height: 13px;
   // }
   &:hover {
-    background: var(--accent-color);
+    background: $accent-color;
+    border: none;
+  }
+}
+.sw-bt-wr-rev.sw-bt-rev-mob {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .sw-bt-wr-rev.sw-bt-rev-deck {
+    display: none;
+  }
+  .sw-bt-wr-rev.sw-bt-rev-mob {
+    margin-top: 16px;
+    display: flex;
+    top: 100%;
+    bottom: 0;
+    left: 54%;
+    transform: translateX(-50%);
   }
 }

@@ -67,14 +67,8 @@
       <div class="burger-menu">
         <div class="mobile-menu-wrap">
           <div class="mob-menu-leng-wr row">
-            <div class="header-bottom-leng leng-mob row">
-              <select class="select" name="language" aria-label="select">
-                <option value="UA" disabled selected>UA</option>
-                <!-- <option value="UA">UA</option> -->
-                <option value="RU">RU</option>
-                <option value="EN">EN</option>
-              </select>
-              <img class="btn-leng" src="img/icon/leng_icon.svg" alt="leng" />
+            <div class="header__logo logo">
+              <a href="/"><img src="./img/logo.svg" alt="logo" /></a>
             </div>
             <button class="button-x mobile-menu-close" type="button">
               <img src="./img/icon/X.svg" alt="іконка" />
@@ -83,89 +77,64 @@
           <nav class="mobile-menu">
             <ul class="mobile-menu-list">
               <li><a href="/">Главная</a></li>
+              <li><a href="/">О нас</a></li>
               <li>
                 <div class="" id="accordeon-menu-mob">
                   <div class="row accm1-head">
-                    <a href="/page-generator.html">Продукти</a>
+                    <a href="/page-generator.html">Услуги</a>
                     <div>
-                      <button type="button" class="faq-img faq-open1">
-                        <img src="./img/icon/CaretDown_s.svg" alt="іконка" />
+                      <button type="button" class="serv-btn faq-open1">
+                        <img src="./img/icon/CaretDownG.svg" alt="іконка" />
                       </button>
                       <button
                         type="button"
-                        class="faq-img faq-closed1 is-hidden"
+                        class="serv-btn faq-closed1 is-hidden"
                       >
-                        <img src="./img/icon/CaretUp.svg" alt="іконка" />
+                        <img src="./img/icon/CaretUpG.svg" alt="іконка" />
                       </button>
                     </div>
                   </div>
-                  <div class="accm1-body column is-hidden">
-                    <div class="marg column">
-                      <a href="/page-generator.html">Генератори</a>
-                      <a href="/page-generator.html">Запчастини</a>
-                    </div>
+                  <div class="accm1-body is-hidden">
+                    <ul class="marg">
+                      <li><a href="./page-serv-shrot.html">Шрот терапия</a></li>
+                      <li>
+                        <a href="./page-serv-konech.html"
+                          >Аппарат на нижние конечности</a
+                        >
+                      </li>
+                      <li><a href="./page-serv-sheno.html">Корсет Шено</a></li>
+                      <li>
+                        <a href="./page-serv-ortez.html">Ортезирование</a>
+                      </li>
+                      <li>
+                        <a href="./page-serv-shlem.html">Ортопедический шлем</a>
+                      </li>
+                      <li>
+                        <a href="./page-serv-kosolap.html"
+                          >Лечение косолапости</a
+                        >
+                      </li>
+                      <li>
+                        <a href="./page-serv-konsult.html"
+                          >Консультации и осмотры</a
+                        >
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </li>
-              <li>
-                <div class="" id="accordeon-menu-mob2">
-                  <div class="row accm2-head">
-                    <a href="/page-generator.html">Послуги</a>
-                    <div>
-                      <button type="button" class="faq-img faq-open1">
-                        <img src="./img/icon/CaretDown_s.svg" alt="іконка" />
-                      </button>
-                      <button
-                        type="button"
-                        class="faq-img faq-closed1 is-hidden"
-                      >
-                        <img src="./img/icon/CaretUp.svg" alt="іконка" />
-                      </button>
-                    </div>
-                  </div>
-                  <div class="accm2-body column is-hidden">
-                    <div class="marg column">
-                      <a href="/page-generator.html"
-                        >Будівництво сонячних станцій</a
-                      >
-                      <a href="/page-generator.html">Електромонтажні роботи</a>
-                      <a href="/page-generator.html">Сервісне обслуговування</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li><a href="/page-about.html">Про нас</a></li>
-              <li><a href="/page-obj.html">Об'єкти</a></li>
-              <li><a href="/page-blog.html">Блог</a></li>
-              <li><a href="/page-reviews.html">Відгуки</a></li>
+              <li><a href="/page-about.html">Отзывы</a></li>
+              <li><a href="/page-obj.html">Специалисты</a></li>
+              <li><a href="/page-blog.html">Статьи</a></li>
+              <li><a href="/page-reviews.html">Контакты</a></li>
             </ul>
           </nav>
-          <button class="menu-btn-1 btn popup-open" type="button">
-            Залишити заявку
-          </button>
-          <ul class="footer-list-cont menu-mob-list-cont footer-list">
-            <li>
-              <a href="#"
-                ><img src="./img/icon/Phoneb.svg" alt="icon" />+38 (063) 292 48
-                06</a
-              >
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  src="./img/icon/Envelopeb.svg"
-                  alt="icon"
-                />info@profenergy.com.ua</a
-              >
-            </li>
-            <li>
-              <a href="https://maps.app.goo.gl/vb2EwiMuiRdBmJtP9"
-                ><img src="./img/icon/MapPinb.svg" alt="icon" />Україна, 49112,
-                Днiпропетровська обл., мiсто Днiпро, ВУЛИЦЯ ЕЛЕКТРИЧНА, будинок
-                2</a
-              >
-            </li>
-          </ul>
+          <div class="header__tel tel-mob row">
+            <a href="tel:+77089118447"
+              ><img src="./img/icon/Phone.svg" alt="icon" />+7 (708) 911 84
+              47</a
+            >
+          </div>
         </div>
       </div>
     </header>
@@ -185,10 +154,10 @@
           <div class="custom-dropdown-container">
             <div class="custom-dropdown-wrapper">
               <!-- Кастомный выпадающий список -->
-              <div class="custom-dropdown">Все</div>
+              <div class="custom-dropdown">Алматы</div>
               <!-- Опции для кастомного выпадающего списка -->
               <ul class="custom-dropdown-list">
-                <li data-value="all">Все</li>
+                <!-- <li data-value="all">Все</li> -->
                 <li data-value="almaty">Алматы</li>
                 <li data-value="ust-kamenogorsk">Усть-Каменогорск</li>
                 <li data-value="astana">Астана</li>
@@ -201,8 +170,9 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua
           </p>
-          <button class="btn" type="button">Консультация</button>
-          <img src="./img/hero.jpg" alt="photo" />
+          <!-- <button class="btn" type="button">Консультация</button> -->
+          <a href="#form" class="btn" type="button">Консультация</a>
+          <div class="hero-img-wrap"></div>
         </div>
       </section>
       <section class="services section">
@@ -241,7 +211,7 @@
               </div>
               <div class="services__list-item section-item swiper-slide">
                 <a href="#"
-                  ><img src="./img/serv-2.jpg" alt="услуги" />
+                  ><img src="./img/no_image.jpg" alt="услуги" />
                   <div class="text-item-wrap">
                     <h3 class="title-item">Аппарат на нижние конечности</h3>
                     <p class="text-item">
@@ -309,14 +279,14 @@
           </div>
         </div>
       </section>
-
       <section class="advantages section">
         <div class="container">
           <h4 class="section-name">приемущества</h4>
           <h2 class="section-title">Почему выбирают Сайгак Орто?</h2>
           <div class="advantages__item-wrap row">
             <div class="advantages__item advantages__item-img">
-              <img src="./img/advantages.jpg" alt="услуги" />
+              <!-- <img src="./img/advantages.jpg" alt="услуги" /> -->
+              <img src="./img/no_image.jpg" alt="услуги" />
               <ul class="advantages__item-img-descr-list row">
                 <li>
                   <h5>25<span>лет</span></h5>
@@ -336,7 +306,7 @@
                 </li>
               </ul>
             </div>
-            <ul class="advantages__item advantages__item-list">
+            <ul class="advantages__item advantages__item-list adv-deck">
               <li class="advantages__item-list-item row__c">
                 <div class="advantages__list-img-wrap">
                   <img src="./img/icon/FirstAidKit1.svg" alt="услуги" />
@@ -390,6 +360,63 @@
                 </div>
               </li>
             </ul>
+            <div class="swiper swiper-adv adv-mob">
+              <ul class="advantages__item advantages__item-list swiper-wrapper">
+                <li class="advantages__item-list-item swiper-slide">
+                  <div class="advantages__list-img-wrap">
+                    <img src="./img/icon/FirstAidKit1.svg" alt="услуги" />
+                  </div>
+                  <div class="advantages__text-item-wrap">
+                    <h3 class="title-item">Современные методики:</h3>
+                    <p class="text-item">
+                      Мы применяем передовые методики детской ортопедии,
+                      основанные на последних медицинских достижениях,
+                      обеспечивая эффективное лечение.
+                    </p>
+                  </div>
+                </li>
+                <li class="advantages__item-list-item swiper-slide">
+                  <div class="advantages__list-img-wrap">
+                    <img src="./img/icon/Bandaids2.svg" alt="услуги" />
+                  </div>
+                  <div class="advantages__text-item-wrap">
+                    <h3 class="title-item">Качество корсетов Шено:</h3>
+                    <p class="text-item">
+                      Мы изготавливаем высококачественные корсеты Шено,
+                      предоставляя нашим маленьким пациентам оптимальную
+                      поддержку и комфорт в процессе лечения.
+                    </p>
+                  </div>
+                </li>
+                <li class="advantages__item-list-item swiper-slide">
+                  <div class="advantages__list-img-wrap">
+                    <img src="./img/icon/CircleWavyCheck3.svg" alt="услуги" />
+                  </div>
+                  <div class="advantages__text-item-wrap">
+                    <h3 class="title-item">Современные методики:</h3>
+                    <p class="text-item">
+                      Мы применяем передовые методики детской ортопедии,
+                      основанные на последних медицинских достижениях,
+                      обеспечивая эффективное лечение.
+                    </p>
+                  </div>
+                </li>
+                <li class="advantages__item-list-item swiper-slide">
+                  <div class="advantages__list-img-wrap">
+                    <img src="./img/icon/Star4.svg" alt="услуги" />
+                  </div>
+                  <div class="advantages__text-item-wrap">
+                    <h3 class="title-item">Современные методики:</h3>
+                    <p class="text-item">
+                      Мы применяем передовые методики детской ортопедии,
+                      основанные на последних медицинских достижениях,
+                      обеспечивая эффективное лечение.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+              <div class="swiper-pagination-adv"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -397,83 +424,236 @@
         <div class="container">
           <h4 class="section-name">как проходит</h4>
           <h2 class="section-title">Изготовление корсета Шено</h2>
-          <img class="stages-icon" src="./img/icon/123.svg" alt="icon" />
-          <ul class="stages__list section-list">
-            <li class="stages__item section-item">
-              <img
-                class="stages-s-item-img"
-                src="./img/step1.jpg"
-                alt="консультация"
-              />
-              <div class="stages__item-wrap text-item-wrap">
-                <h5 class="stages__item-step">Шаг 1</h5>
+          <div class="st-list-deck">
+            <img
+              class="stages-icon stages-icon-one"
+              src="./img/icon/123.svg"
+              alt="icon"
+            />
+            <ul class="stages__list section-list">
+              <li class="stages__item section-item">
+                <img
+                  class="stages-s-item-img"
+                  src="./img/step1.jpg"
+                  alt="консультация"
+                />
+                <div class="stages__item-wrap text-item-wrap">
+                  <h5 class="stages__item-step">Шаг 1</h5>
+                  <h4 class="stages__item-title title-item">Консультация</h4>
+                  <p class="stages__item-text text-item">
+                    Прием и осмотр у врача ортопеда
+                  </p>
+                </div>
+              </li>
+              <li class="stages__item section-item">
+                <img
+                  class="stages-s-item-img"
+                  src="./img/step2.jpg"
+                  alt="консультация"
+                />
+                <div class="stages__item-wrap text-item-wrap">
+                  <h5 class="stages__item-step">Шаг 2</h5>
+                  <h4 class="stages__item-title title-item">3D сканирование</h4>
+                  <p class="stages__item-text text-item">
+                    Создание 3D скана с тела пациента
+                  </p>
+                </div>
+              </li>
+              <li class="stages__item section-item">
+                <img
+                  class="stages-s-item-img"
+                  src="./img/step3.jpg"
+                  alt="консультация"
+                />
+                <div class="stages__item-wrap text-item-wrap">
+                  <h5 class="stages__item-step">Шаг 3</h5>
+                  <h4 class="stages__item-title title-item">Моделирование</h4>
+                  <p class="stages__item-text text-item">
+                    Обработка 3D скана в ПО Rodin4D NEO
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <img
+              class="stages-icon stages-icon-two"
+              src="./img/icon/45.svg"
+              alt="icon"
+            />
+            <ul class="stages__list stages__list-two section-list">
+              <li class="stages__item section-item">
+                <img
+                  class="stages-s-item-img"
+                  src="./img/step4.jpg"
+                  alt="консультация"
+                />
+                <div class="stages__item-wrap text-item-wrap">
+                  <h5 class="stages__item-step">Шаг 4</h5>
+                  <h4 class="stages__item-title title-item">Изготовление</h4>
+                  <p class="stages__item-text text-item">
+                    Фрезеровка и блоковка заготовки корсета
+                  </p>
+                </div>
+              </li>
+              <li class="stages__item section-item">
+                <img
+                  class="stages-s-item-img"
+                  src="./img/step5.jpg"
+                  alt="консультация"
+                />
+                <div class="stages__item-wrap text-item-wrap">
+                  <h5 class="stages__item-step">Шаг 5</h5>
+                  <h4 class="stages__item-title title-item">Выдача корсета</h4>
+                  <p class="stages__item-text text-item">
+                    итоговая примерка и подгонка на пациенте
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <ul class="stages__list section-list st-list-mob" id="accordeon-step">
+            <li class="stages__item">
+              <div class="stages-mob-header acc-head-st">
+                <div class="row">
+                  <h5 class="stages__item-step">Шаг 1</h5>
+                  <div>
+                    <button type="button" class="faq-img faq-open1">
+                      <img src="./img/icon/Plus.svg" alt="іконка" />
+                    </button>
+                    <button type="button" class="faq-img faq-closed1 is-hidden">
+                      <img src="./img/icon/X.svg" alt="іконка" />
+                    </button>
+                  </div>
+                </div>
                 <h4 class="stages__item-title title-item">Консультация</h4>
-                <p class="stages__item-text text-item">
-                  Прием и осмотр у врача ортопеда
-                </p>
+              </div>
+              <div class="stages-mob-body acc-body-st is-hidden">
+                <img
+                  class="stages-s-item-img"
+                  src="./img/step1.jpg"
+                  alt="консультация"
+                />
+                <div class="stages__item-wrap text-item-wrap">
+                  <!-- <h4 class="stages__item-title title-item">Консультация</h4> -->
+                  <p class="stages__item-text text-item">
+                    Прием и осмотр у врача ортопеда
+                  </p>
+                </div>
               </div>
             </li>
-            <li class="stages__item section-item">
-              <img
-                class="stages-s-item-img"
-                src="./img/step2.jpg"
-                alt="консультация"
-              />
-              <div class="stages__item-wrap text-item-wrap">
-                <h5 class="stages__item-step">Шаг 2</h5>
-                <h4 class="stages__item-title title-item">3D сканирование</h4>
-                <p class="stages__item-text text-item">
-                  Создание 3D скана с тела пациента
-                </p>
+            <li class="stages__item">
+              <div class="stages-mob-header acc-head-st">
+                <div class="row">
+                  <h5 class="stages__item-step">Шаг 1</h5>
+                  <div>
+                    <button type="button" class="faq-img faq-open1">
+                      <img src="./img/icon/Plus.svg" alt="іконка" />
+                    </button>
+                    <button type="button" class="faq-img faq-closed1 is-hidden">
+                      <img src="./img/icon/X.svg" alt="іконка" />
+                    </button>
+                  </div>
+                </div>
+                <h4 class="stages__item-title title-item">Консультация</h4>
+              </div>
+              <div class="stages-mob-body acc-body-st is-hidden">
+                <img
+                  class="stages-s-item-img"
+                  src="./img/step2.jpg"
+                  alt="консультация"
+                />
+                <div class="stages__item-wrap text-item-wrap">
+                  <!-- <h4 class="stages__item-title title-item">Консультация</h4> -->
+                  <p class="stages__item-text text-item">
+                    Прием и осмотр у врача ортопеда
+                  </p>
+                </div>
               </div>
             </li>
-            <li class="stages__item section-item">
-              <img
-                class="stages-s-item-img"
-                src="./img/step3.jpg"
-                alt="консультация"
-              />
-              <div class="stages__item-wrap text-item-wrap">
-                <h5 class="stages__item-step">Шаг 3</h5>
-                <h4 class="stages__item-title title-item">Моделирование</h4>
-                <p class="stages__item-text text-item">
-                  Обработка 3D скана в ПО Rodin4D NEO
-                </p>
+            <li class="stages__item">
+              <div class="stages-mob-header acc-head-st">
+                <div class="row">
+                  <h5 class="stages__item-step">Шаг 1</h5>
+                  <div>
+                    <button type="button" class="faq-img faq-open1">
+                      <img src="./img/icon/Plus.svg" alt="іконка" />
+                    </button>
+                    <button type="button" class="faq-img faq-closed1 is-hidden">
+                      <img src="./img/icon/X.svg" alt="іконка" />
+                    </button>
+                  </div>
+                </div>
+                <h4 class="stages__item-title title-item">Консультация</h4>
+              </div>
+              <div class="stages-mob-body acc-body-st is-hidden">
+                <img
+                  class="stages-s-item-img"
+                  src="./img/step3.jpg"
+                  alt="консультация"
+                />
+                <div class="stages__item-wrap text-item-wrap">
+                  <!-- <h4 class="stages__item-title title-item">Консультация</h4> -->
+                  <p class="stages__item-text text-item">
+                    Прием и осмотр у врача ортопеда
+                  </p>
+                </div>
               </div>
             </li>
-          </ul>
-          <img
-            class="stages-icon stages-icon-two"
-            src="./img/icon/45.svg"
-            alt="icon"
-          />
-          <ul class="stages__list stages__list-two section-list">
-            <li class="stages__item section-item">
-              <img
-                class="stages-s-item-img"
-                src="./img/step4.jpg"
-                alt="консультация"
-              />
-              <div class="stages__item-wrap text-item-wrap">
-                <h5 class="stages__item-step">Шаг 4</h5>
-                <h4 class="stages__item-title title-item">Изготовление</h4>
-                <p class="stages__item-text text-item">
-                  Фрезеровка и блоковка заготовки корсета
-                </p>
+            <li class="stages__item">
+              <div class="stages-mob-header acc-head-st">
+                <div class="row">
+                  <h5 class="stages__item-step">Шаг 1</h5>
+                  <div>
+                    <button type="button" class="faq-img faq-open1">
+                      <img src="./img/icon/Plus.svg" alt="іконка" />
+                    </button>
+                    <button type="button" class="faq-img faq-closed1 is-hidden">
+                      <img src="./img/icon/X.svg" alt="іконка" />
+                    </button>
+                  </div>
+                </div>
+                <h4 class="stages__item-title title-item">Консультация</h4>
+              </div>
+              <div class="stages-mob-body acc-body-st is-hidden">
+                <img
+                  class="stages-s-item-img"
+                  src="./img/step4.jpg"
+                  alt="консультация"
+                />
+                <div class="stages__item-wrap text-item-wrap">
+                  <!-- <h4 class="stages__item-title title-item">Консультация</h4> -->
+                  <p class="stages__item-text text-item">
+                    Прием и осмотр у врача ортопеда
+                  </p>
+                </div>
               </div>
             </li>
-            <li class="stages__item section-item">
-              <img
-                class="stages-s-item-img"
-                src="./img/step5.jpg"
-                alt="консультация"
-              />
-              <div class="stages__item-wrap text-item-wrap">
-                <h5 class="stages__item-step">Шаг 5</h5>
-                <h4 class="stages__item-title title-item">Выдача корсета</h4>
-                <p class="stages__item-text text-item">
-                  итоговая примерка и подгонка на пациенте
-                </p>
+            <li class="stages__item">
+              <div class="stages-mob-header acc-head-st">
+                <div class="row">
+                  <h5 class="stages__item-step">Шаг 1</h5>
+                  <div>
+                    <button type="button" class="faq-img faq-open1">
+                      <img src="./img/icon/Plus.svg" alt="іконка" />
+                    </button>
+                    <button type="button" class="faq-img faq-closed1 is-hidden">
+                      <img src="./img/icon/X.svg" alt="іконка" />
+                    </button>
+                  </div>
+                </div>
+                <h4 class="stages__item-title title-item">Консультация</h4>
+              </div>
+              <div class="stages-mob-body acc-body-st is-hidden">
+                <img
+                  class="stages-s-item-img"
+                  src="./img/step5.jpg"
+                  alt="консультация"
+                />
+                <div class="stages__item-wrap text-item-wrap">
+                  <!-- <h4 class="stages__item-title title-item">Консультация</h4> -->
+                  <p class="stages__item-text text-item">
+                    Прием и осмотр у врача ортопеда
+                  </p>
+                </div>
               </div>
             </li>
           </ul>
@@ -483,7 +663,7 @@
         <div class="reviews-container">
           <h4 class="section-name">отзывы</h4>
           <h2 class="section-title">Что о нас говорят пациенты</h2>
-          <div class="sw-bt-wr-rev">
+          <div class="sw-bt-wr-rev sw-bt-rev-deck">
             <div class="swiper-button-prev-rev">
               <img src="./img/icon/VectorL2.svg" alt="icon" />
             </div>
@@ -567,6 +747,14 @@
               </div>
             </div>
           </div>
+          <div class="sw-bt-wr-rev sw-bt-rev-mob">
+            <div class="swiper-button-prev-rev">
+              <img src="./img/icon/VectorL2.svg" alt="icon" />
+            </div>
+            <div class="swiper-button-next-rev">
+              <img src="./img/icon/VectorR2.svg" alt="icon" />
+            </div>
+          </div>
         </div>
       </section>
       <section class="team section">
@@ -575,7 +763,7 @@
           <h2 class="section-title">
             Мы предоставляем комплексные решения в области детской ортопедии
           </h2>
-          <ul class="team__list row">
+          <ul class="team__list team-list-deck row">
             <li class="team__list__item section-item">
               <a href="#"
                 ><div class="img-wrap">
@@ -648,9 +836,90 @@
               </a>
             </li>
           </ul>
+          <div class="swiper swiper-team team-list-mob">
+            <ul class="team__list swiper-wrapper">
+              <li class="team__list__item section-item swiper-slide">
+                <a href="#"
+                  ><div class="img-wrap">
+                    <img
+                      class="team__img"
+                      src="./img/team-1-m.jpg"
+                      alt="услуги"
+                    />
+                  </div>
+                  <div class="text-item-wrap">
+                    <div class="team__city row">
+                      <img src="./img/icon/MapPin.svg" alt="icon" />
+                      <p>Алматы</p>
+                    </div>
+                    <h3 class="title-item">Тулегенов Азамат Сержанович</h3>
+                    <p class="text-item">Детский ортопед-травматолог</p>
+                  </div>
+                </a>
+              </li>
+              <li class="team__list__item section-item swiper-slide">
+                <a href="#"
+                  ><div class="img-wrap">
+                    <img
+                      class="team__img"
+                      src="./img/team-2-m.jpg"
+                      alt="услуги"
+                    />
+                  </div>
+                  <div class="text-item-wrap">
+                    <div class="team__city row">
+                      <img src="./img/icon/MapPin.svg" alt="icon" />
+                      <p>Усть-Каменогорск</p>
+                    </div>
+                    <h3 class="title-item">Кеня Виктор Николаевич</h3>
+                    <p class="text-item">
+                      Ортопед-травматолог, кинезиотерапевт
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="team__list__item section-item swiper-slide">
+                <a href="#"
+                  ><div class="img-wrap">
+                    <img
+                      class="team__img"
+                      src="./img/team-3-m.jpg"
+                      alt="услуги"
+                    />
+                  </div>
+                  <div class="text-item-wrap">
+                    <div class="team__city row">
+                      <img src="./img/icon/MapPin.svg" alt="icon" />
+                      <p>Астана</p>
+                    </div>
+                    <h3 class="title-item">Атепилева Алия Мухтаровна</h3>
+                    <p class="text-item">ДВрач травматолог-ортопед</p>
+                  </div>
+                </a>
+              </li>
+              <li class="team__list__item section-item swiper-slide">
+                <a href="#"
+                  ><img
+                    class="team__img"
+                    src="./img/team-4-m.jpg"
+                    alt="услуги"
+                  />
+                  <div class="text-item-wrap">
+                    <div class="team__city row">
+                      <img src="./img/icon/MapPin.svg" alt="icon" />
+                      <p>Атырау</p>
+                    </div>
+                    <h3 class="title-item">Темралиев Батырбек Байболович</h3>
+                    <p class="text-item">Врач ортопед</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="swiper-pagination-team"></div>
+          </div>
         </div>
       </section>
-      <section class="form-s section">
+      <section class="form-s section" id="form">
         <div class="container">
           <div class="form-s__item-wrap row">
             <div class="form-s__item">
@@ -668,7 +937,16 @@
               </div>
             </div>
             <div class="form-s__item form-s__item-img">
-              <img src="./img/form_all.png" alt="услуги" />
+              <img
+                class="form-img-deck"
+                src="./img/form-photo1.png"
+                alt="услуги"
+              />
+              <img
+                class="form-img-mob"
+                src="./img/form-photo-mob.png"
+                alt="услуги"
+              />
             </div>
           </div>
         </div>
@@ -717,7 +995,7 @@
             <li>
               <a href="#"
                 ><img src="./img/icon/YoutubeLogo.svg" alt="icon" />
-                <p>Youtube</p></a
+                <p>YouTube</p></a
               >
             </li>
           </ul>

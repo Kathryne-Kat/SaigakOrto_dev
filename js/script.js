@@ -1,3 +1,12 @@
+$(document).ready(function () {
+  $(".header-burger").on("click", function () {
+    $(".burger-menu").addClass("is-active");
+  });
+
+  $(".mobile-menu-close").on("click", function () {
+    $(".burger-menu").removeClass("is-active");
+  });
+});
 const refs2 = {
   menuServ: document.querySelector("#menu-item-1"),
   openServ: document.getElementById("menu-serv"),
@@ -188,4 +197,63 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Применяем фильтр по дате от ближайшей к текущей дате при загрузке страницы
         sortByNearestDate();
-    });
+});
+    
+$(document).ready(function () {
+  //прикрепляем клик по заголовкам acc-head
+  // $("#accordeon .acc-head").on("click", f_acc);
+  // $("#accordeon-step .accs1-head").on("click", f_accm1); 
+  $("#accordeon-menu-mob .accm1-head").on("click", f_accm2);
+  // $("#accordeon-menu-mob2 .accm2-head").on("click", f_accm3);   
+});
+
+// function f_acc() {
+//   //скрываем все кроме того, что должны открыть
+//   $("#accordeon .acc-body").not($(this).next()).slideUp(100);
+//   // открываем или скрываем блок под заголовоком, по которому кликнули
+//   $(this).next().slideToggle(100);
+//   $(this).toggleClass("add-bg");
+//   $("#accordeon .faq-open1").toggleClass("is-hidden");
+//   // $(this).toggleClass("is-hidden");
+//   $("#accordeon .faq-close1").toggleClass("is-hidden");
+// //   $(this).toggleClass("is-hidden");
+// }
+
+// function f_accm1() {
+//   $("#accordeon-step .accs1-body").not($(this).next()).slideUp(100);
+//     $(this).next().slideToggle(100);
+//     $(this).toggleClass("add-bg-s");
+//     $("#accordeon-step .faq-open1").toggleClass("is-hidden");
+//     $("#accordeon-step .faq-close1").toggleClass("is-hidden");
+// }
+function f_accm2() {
+  $("#accordeon-menu-mob .accm1-body").not($(this).next()).slideUp(100);
+  $(this).next().slideToggle(100);  
+    //   $(this).toggleClass("add-bg-m1");
+    $("#accordeon-menu-mob .faq-open1").toggleClass("is-hidden");
+    $("#accordeon-menu-mob .faq-closed1").toggleClass("is-hidden");
+   
+}
+// function f_accm3() {
+//   $("#accordeon-menu-mob2 .accm2-body").not($(this).next()).slideUp(100);
+//     $(this).next().slideToggle(100);
+//     //   $(this).toggleClass("add-bg-m1");
+//     // $("#accordeon-step .faq-open1").toggleClass("is-hidden");
+//     // $("#accordeon-step .faq-close1").toggleClass("is-hidden");
+   
+// }
+
+$(document).ready(function () {
+  //прикрепляем клик по заголовкам acc-head
+  $("#accordeon-step .acc-head-st").on("click", f_acc);  
+});
+function f_acc() {
+  //скрываем все кроме того, что должны открыть
+  $("#accordeon-step .acc-body-st").not($(this).next()).slideUp(100);
+  // открываем или скрываем блок под заголовоком, по которому кликнули
+  $(this).next().slideToggle(100);
+// если нужно добавить что-то к внешнему виду
+   $(this).parent().toggleClass("add-bg");
+  // используем find() для поиска элементов внутри текущего блока
+  $(this).find(".faq-open1, .faq-closed1").toggleClass("is-hidden");
+}

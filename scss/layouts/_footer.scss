@@ -5,9 +5,21 @@
   & .container {
     padding-bottom: 48px;
     align-items: start;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__logo {
     margin-bottom: 36px;
+    @media screen and (max-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+      & img {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
   }
   &__item-wrap {
     & h6 {
@@ -16,6 +28,10 @@
       line-height: 1.5;
       margin-bottom: 20px;
       margin-top: 0;
+      @media screen and (max-width: 768px) {
+        text-align: center;
+        margin-top: 32px;
+      }
     }
     & ul {
       display: flex;
@@ -27,6 +43,9 @@
         & span {
           font-weight: 500;
         }
+      }
+      @media screen and (max-width: 768px) {
+        align-items: center;
       }
     }
     &.footer-three,

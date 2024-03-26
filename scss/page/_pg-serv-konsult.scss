@@ -1,34 +1,89 @@
-.pg-konech-hero {
-  padding-top: 50px;
-  position: relative;
-}
-.pg-konech-hero-wrap {
-  background: url(../img/pg-serv-konech-hero.jpg);
+// .pg-konech-hero {
+//   padding-top: 50px;
+//   position: relative;
+// }
+.pg-shrot-hero-wrap.pg-konsult-hero-wrap {
+  background: url(../img/serv-konech-hero.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 352px;
-  & h1 {
-    position: absolute;
-    font-weight: 600;
-    font-size: 62px;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 800px;
-    width: 100%;
+  background-position: center bottom;
+  background-size: 100%;
+  height: 360px;
+  @media screen and (max-width: 1400px) {
+    height: 25vw;
+  }
+  @media screen and (max-width: 1024px) {
+    height: 27vw;
   }
 }
+// .pg-konech-hero-wrap {
+//   background: url(../img/pg-serv-konech-hero.jpg);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 352px;
+//   & h1 {
+//     position: absolute;
+//     font-weight: 600;
+//     font-size: 62px;
+//     text-align: center;
+//     margin-top: 0;
+//     margin-bottom: 0;
+//     top: 0;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     max-width: 800px;
+//     width: 100%;
+//   }
+// }
 
-.item-konech-one {
-  border-bottom: none;
-  margin-bottom: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  & ul {
-    column-count: 1;
-    column-gap: 0;
+// .item-konech-one {
+//   border-bottom: none;
+//   margin-bottom: 0;
+//   padding-top: 0;
+//   padding-bottom: 0;
+//   & ul {
+//     column-count: 1;
+//     column-gap: 0;
+//   }
+// }
+.pg-konsult-content {
+  & h2 {
+    display: none;
+  }
+}
+.pg-konsult-content__item {
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 24px;
+  &.konsult-one {
+    & div:first-child {
+      width: 42%;
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    & div:last-child {
+      width: 58%;
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &.konsult-two {
+    & .konsult-two-one {
+      width: 42%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: space-between;
+      gap: 24px;
+    }
+    & .konsult-two-two {
+      width: 58%;
+      & img {
+        width: 100%;
+      }
+    }
   }
 }

@@ -51,13 +51,42 @@ const swiper2 = new Swiper(".swiper-reviews", {
   // },
 });
 
-$(document).ready(function(){
-  $('.slick-serv').slick({
-   centerMode: true,
-  centerPadding: '100px',
-  slidesToShow: 5,
-  slideToScroll: 1,
-  infinite: true,
-  variableWidth: true
-  });
+const swiper3 = new Swiper(".swiper-adv", {
+  loop: true, 
+  rewind: true,
+	speed: 2000,
+	grabCursor: true,
+	slidesPerView: "auto",
+	spaceBetween: 24,
+  // initialSlide: 3,     
+    // autoplay: {       
+    //     delay: 3000,
+    // },   
+  // navigation: {
+  //   nextEl: ".swiper-button-next-rev",
+  //   prevEl: ".swiper-button-prev-rev",
+  //   },
+  pagination: {
+        el: '.swiper-pagination-adv',
+        clickable:true,
+  },
+});
+
+const swiper4 = new Swiper(".swiper-team", {
+  loop: true, 
+  rewind: true,
+	speed: 2000,
+	grabCursor: true,
+	slidesPerView: "auto",
+	spaceBetween: 16,
+ breakpoints: {  
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,     
+    }  
+  },
+  pagination: {
+        el: '.swiper-pagination-team',
+        clickable:true,
+  },
 });

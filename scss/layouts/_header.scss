@@ -2,6 +2,14 @@
 .header {
   margin-top: 20px;
   margin-bottom: 30px;
+  @media screen and (max-width: 1024px) {
+    &__menu {
+      display: none;
+    }
+    &__tel {
+      display: none;
+    }
+  }
 }
 .header__container {
   //   padding: 10px 0;
