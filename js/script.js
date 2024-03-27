@@ -257,3 +257,29 @@ function f_acc() {
   // используем find() для поиска элементов внутри текущего блока
   $(this).find(".faq-open1, .faq-closed1").toggleClass("is-hidden");
 }
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   const container = document.querySelector(".container-1");
+//   const smallImagesContainer = document.getElementById("small-images");
+
+//   const smallImages = [
+//     "/img/hero-l.jpg",
+//     "/img/hero-r.jpg",
+//     // Add more small images as needed
+//   ];
+
+//   smallImages.forEach(function(imageSrc) {
+//     const img = document.createElement("img");
+//     img.src = imageSrc;
+//     img.alt = "Small Image";
+//     img.classList.add("small-image");
+
+//     // Randomly position small images in the corners
+//     const randomX = Math.floor(Math.random() * window.innerWidth);
+//     const randomY = Math.floor(Math.random() * window.innerHeight);
+//     img.style.top = `${randomY}px`;
+//     img.style.left = `${randomX}px`;
+
+//     container.appendChild(img);
+//   });
+// });

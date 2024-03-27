@@ -25,6 +25,10 @@ main.about {
   background-position: left 130px, top, left 80px;
   background-size: 100%, 950px, 100%;
   height: 480px;
+  @media screen and (max-width: 768px) {
+    background-size: 100%, 95%, 100%;
+    height: 45vw;
+  }
 }
 .pg-about-goal {
   margin-bottom: 110px;
