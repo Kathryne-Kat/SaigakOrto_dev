@@ -2,4 +2,26 @@ main.team {
   background: url(../img/team-bg-1.svg), url(../img/team-bg-2.svg);
   background-position: 0 50px, 100% -30px;
   background-repeat: no-repeat;
+  @media screen and (max-width: 768px) {
+    background: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .pg-team__list {
+    flex-wrap: wrap;
+    @media screen and (max-width: 768px) {
+      &.team__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+        & .team__list__item {
+          max-width: 400px;
+          width: 100%;
+          flex-basis: 400px;
+        }
+      }
+    }
+  }
 }

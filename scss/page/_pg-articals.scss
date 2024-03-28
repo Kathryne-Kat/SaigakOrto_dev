@@ -3,6 +3,18 @@
   height: 28vw;
   width: 100%;
   background-size: 100%;
+  @media screen and (max-width: 1024px) {
+    background: url("../img/art-mob-bg.svg"), url("../img/icon/bg3.svg");
+    background-size: 20%, 10%;
+    background-position: 0 50px, 100% 0;
+    background-repeat: no-repeat;
+    height: 22vw;
+  }
+  @media screen and (max-width: 768px) {
+    background-size: 130px, 60px;
+    background-position: 0 10px, 100% 0;
+    height: 130px;
+  }
   & .pg-art-hero-wrap {
     max-width: 510px;
     width: 100%;
@@ -70,6 +82,9 @@
             // background: url("/img/icon/ArrowRight.svg") center center no-repeat;
           }
         }
+      }
+      @media screen and (max-width: 1250px) {
+        width: 32%;
       }
     }
   }

@@ -2,6 +2,9 @@ main.reviews-bg {
   background: url(../img/icon/bg2.svg), url(../img/icon/bg1.svg);
   background-position: 0 200px, 100% 30px;
   background-repeat: no-repeat;
+  @media screen and (max-width: 768px) {
+    background: none;
+  }
 }
 
 /*-------------------REVIEWS----------------*/
@@ -11,6 +14,9 @@ main.reviews-bg {
 .p-reviews {
   margin-top: 24px;
   margin-bottom: 48px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 24px;
+  }
   &__wrap {
     margin-left: auto;
     margin-right: auto;
@@ -23,6 +29,10 @@ main.reviews-bg {
       text-align: center;
       margin-top: 0;
       margin-bottom: 24px;
+      @media screen and (max-width: 1024px) {
+        width: 100%;
+        font-size: 36px;
+      }
     }
   }
   &__text {
@@ -41,6 +51,9 @@ main.reviews-bg {
     justify-content: center;
     gap: 36px;
     align-items: start;
+    @media screen and (max-width: 480x) {
+      gap: 20px;
+    }
   }
   &__rating {
     font-weight: 600;
@@ -49,6 +62,9 @@ main.reviews-bg {
     margin-top: 12px;
     margin-bottom: 12px;
     // text-align: center;
+    @media screen and (max-width: 768px) {
+      font-size: 36px;
+    }
   }
   &__deckr {
     font-size: 14px;
@@ -57,6 +73,11 @@ main.reviews-bg {
     &:last-child {
       margin-top: 0;
     }
+    @media screen and (max-width: 768px) {
+      &.deckr-two {
+        display: none;
+      }
+    }
   }
   &__wrap-item {
     & h5 {
@@ -64,9 +85,14 @@ main.reviews-bg {
       font-size: 16px;
       margin-top: 0;
       margin-bottom: 0;
+      width: max-content;
     }
     & .row {
       align-items: end;
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: start;
+      }
     }
   }
 }
@@ -74,9 +100,19 @@ main.reviews-bg {
 .p-reviews-line {
   border-right: 1px solid #eaeaea;
   height: 150px;
+  @media screen and (max-width: 768px) {
+    &.rew-line-two {
+      display: none;
+    }
+    height: 100px;
+  }
 }
 
 .p-reviews-count {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
   & .row {
     align-items: center;
     gap: 12px;
@@ -137,12 +173,25 @@ main.reviews-bg {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (max-width: 1200px) {
+    max-width: none;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   &__wrap {
-    max-width: 1240px;
+    // max-width: 1200px;
     width: 100%;
     border: 1px solid #e1e1e1;
     border-radius: 15px;
     padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: 768px) {
+      // max-width: 1200px;
+      // width: 100%;
+      padding: 8px;
+    }
   }
   &__btn {
     display: flex;
@@ -150,6 +199,10 @@ main.reviews-bg {
     border-radius: 9px;
     padding: 8px;
     background: #f8f8f8;
+    @media screen and (max-width: 768px) {
+      background: #ffffff;
+      padding: 0;
+    }
     & .p-reviews-btn {
       font-family: $second-family;
       border-radius: 6px;
@@ -165,10 +218,32 @@ main.reviews-bg {
         background: #faaa2d;
         color: $primary-color;
       }
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+    & .p-reviews-btn-mob {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: row;
+      gap: 4px;
+      border-radius: 32px;
+      padding: 12px;
+      width: 48px;
+      height: 48px;
+      border: none;
+      background: #ffffff;
+      &.active {
+        background: #ffc263;
+      }
     }
   }
   &__list {
     gap: 36px;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
 
     & li {
       display: flex;
@@ -183,8 +258,8 @@ main.reviews-bg {
   & .p-reviews-btn-2 {
     border-radius: 8px;
     padding: 16px 36px;
-    width: 212px;
-    height: 52px;
+    width: max-content;
+    // height: 52px;
     background: $accent-color;
     font-weight: 600;
     font-size: 16px;
@@ -230,6 +305,10 @@ main.reviews-bg {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (max-width: 1024px) {
+    // padding-left: 20px;
+    // padding-right: 20px;
+  }
   &__item {
     margin-top: 36px;
     justify-content: center;
@@ -241,6 +320,10 @@ main.reviews-bg {
     // height: 0px;
     &:last-child {
       border-bottom: none;
+    }
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+      gap: 16px;
     }
   }
   &__1p {

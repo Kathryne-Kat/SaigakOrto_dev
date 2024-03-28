@@ -11,9 +11,21 @@
   margin-right: auto;
   margin-bottom: 48px;
   // height: 383px;
+
   & .cont-1,
   & .cont-2 {
     width: 27%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 20px;
+      & h6 {
+        margin-top: 24px;
+        margin-bottom: 12px;
+      }
+    }
   }
   & .cont-3 {
     width: 46%;
@@ -21,11 +33,29 @@
       display: flex;
       gap: 6px;
       margin-bottom: 16px;
+      @media screen and (max-width: 768px) {
+        justify-content: center;
+      }
       & p {
         margin-top: 0;
         margin-bottom: 0;
       }
     }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    gap: 20px;
+    padding: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 0;
+    border: none;
+    padding: 0 20px;
   }
 }
 

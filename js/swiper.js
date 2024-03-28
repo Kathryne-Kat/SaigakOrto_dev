@@ -33,14 +33,14 @@ const swiper1 = new Swiper(".swiper-services", {
 const swiper2 = new Swiper(".swiper-reviews", {
   loop: true, 
   rewind: true,
-	speed: 2000,
+	speed: 3000,
 	grabCursor: true,
 	slidesPerView: "auto",
 	spaceBetween: 24,
   // initialSlide: 3,     
-    // autoplay: {       
-    //     delay: 3000,
-    // },   
+    autoplay: {       
+        delay: 1000,
+    },   
   navigation: {
     nextEl: ".swiper-button-next-rev",
     prevEl: ".swiper-button-prev-rev",

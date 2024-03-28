@@ -1,5 +1,8 @@
 .form-s {
   margin-top: 90px;
+  @media screen and (max-width: 768px) {
+    margin-top: 50px;
+  }
 }
 .form-s__item-wrap {
   position: relative;
