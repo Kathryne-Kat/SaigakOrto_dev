@@ -22,23 +22,29 @@
 .header__menu {
   width: 50%;
   position: relative;
-}
-.header__menu-list {
-  //   justify-content: space-between;
-  /* gap: 74px; */
-}
-.header__menu ul li a {
-  font-family: "Mulish";
-  &:hover {
-    color: $accent-color;
-    font-weight: 700;
+  & ul li a {
+    font-family: "Mulish";
+    &:hover {
+      color: $accent-color;
+      font-weight: 700;
+    }
+  }
+  // & ul {
+  //   position: relative;
+  // }
+  & ul li:nth-child(3) {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      background: url("../img/icon/CaretDown_menu.svg");
+      top: 4px;
+      right: -17px;
+      width: 16px;
+      height: 16px;
+    }
   }
 }
-// .header-menu ul li:hover,
-// .header-menu ul li:active {
-//   text-decoration: underline;
-//   font-weight: 700;
-// }
 .select {
   font-family: Unbounded;
 }
