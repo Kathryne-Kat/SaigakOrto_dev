@@ -170,8 +170,8 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua
           </p>
-          <!-- <button class="btn" type="button">Консультация</button> -->
-          <a href="#form" class="btn" type="button">Консультация</a>
+          <button class="btn popup-open" type="button">Консультация</button>
+          <!-- <a href="#form" class="btn" type="button">Консультация</a> -->
           <!-- <div class="hero-img-wrap"></div> -->
 
           <div class="container-img">
@@ -1046,6 +1046,27 @@
         <p>© 2024 Ортопедический центр Алматы | Все права защищены</p>
       </div>
     </footer>
+    <div class="backdrop popup-fade">
+      <div class="modal popup">
+        <button class="button-x popup-close" type="button">
+          <img src="/img/icon/X_w.svg" alt="icon" />
+        </button>
+        <div class="modal__content">
+          <h2 class="section-title">Получить консультацию</h2>
+          <p>
+            Оставьте свои контакты и администратор центра свяжется с вами в
+            ближайшее время и запишет на прием к специалисту
+          </p>
+          <div class="form-s-form">
+            <form action="">
+              <input type="text" placeholder="Имя" />
+              <input type="tel" placeholder="Номер телефона*" />
+              <button class="form-s-btn" type="submit">Жду звонка</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.7.0.min.js"
